@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>annotations</Nullable>
+    <StartupObject>WindowsFormsApp1.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.App" Version="2.2.8" />
+  </ItemGroup>
+
+</Project>
