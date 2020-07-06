@@ -27,42 +27,23 @@ namespace WindowsFormsApp1
         {
             String loginUser = loginfield.Text;
             String paswdUser = paswdfield.Text;
-
             
             DBUsers db = new DBUsers();
-
-            try
-            {
-                db.OpenConnection();
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-          
-            } finally
-            {
-                db.CloseConnection();
-            }
-
             DataTable table = new DataTable();
-
             MySqlDataAdapter adapter = new MySqlDataAdapter();
+            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @ul AND `paswd` = @up", db.GetConnection());
 
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @luser AND `paswd` = @puser", db.GetConnection());
-
-            command.Parameters.Add("@luser", MySqlDbType.VarChar).Value = loginUser;
-            command.Parameters.Add("@puser", MySqlDbType.VarChar).Value = paswdUser;
+            command.Parameters.Add("@ul", MySqlDbType.VarChar).Value = loginUser;
+            command.Parameters.Add("@up", MySqlDbType.VarChar).Value = paswdUser;
 
             adapter.SelectCommand = command;
             adapter.Fill(table);
 
             if (table.Rows.Count > 0)
             {
-                MessageBox.Show("Yes!");
-                //this.Hide();
-                //GlobalForm global = new GlobalForm();
-                //global.Show();
+                this.Hide();
+                GlobalForm global = new GlobalForm();
+                global.Show();
             }
             else 
                 MessageBox.Show("NO!");

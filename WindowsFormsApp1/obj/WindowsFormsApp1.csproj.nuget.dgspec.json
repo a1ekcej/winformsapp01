@@ -1,21 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "F:\\KoDiNG\\PROJECTS_CODE\\GitHub_proj\\winformsapp01\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
+    "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
   },
   "projects": {
-    "F:\\KoDiNG\\PROJECTS_CODE\\GitHub_proj\\winformsapp01\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
+    "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\KoDiNG\\PROJECTS_CODE\\GitHub_proj\\winformsapp01\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "projectUniqueName": "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
         "projectName": "WindowsFormsApp1",
-        "projectPath": "F:\\KoDiNG\\PROJECTS_CODE\\GitHub_proj\\winformsapp01\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\a1ex\\.nuget\\packages\\",
-        "outputPath": "F:\\KoDiNG\\PROJECTS_CODE\\GitHub_proj\\winformsapp01\\WindowsFormsApp1\\obj\\",
+        "projectPath": "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\ZaRt\\.nuget\\packages\\",
+        "outputPath": "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\a1ex\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\ZaRt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -41,6 +46,10 @@
             "Microsoft.NETCore.App": {
               "target": "Package",
               "version": "[2.2.8, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.20, )"
             }
           },
           "imports": [

@@ -7,7 +7,7 @@ namespace WindowsFormsApp1
 {
     class DBUsers
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=admin;password=;database=mydb");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;user=root;password=root;database=mydb");
 
         public void OpenConnection () 
         {
