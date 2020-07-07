@@ -12,6 +12,11 @@ namespace WindowsFormsApp1
 {
     public partial class GlobalForm : Form
     {
+        public string LoginText
+        {
+            get { return textlog.Text; }
+            set { textlog.Text = value; }
+        }
         public GlobalForm()
         {
             InitializeComponent();

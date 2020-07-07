@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace WindowsFormsApp1
 {
     public partial class AutorizationForm : Form
-    {
+    {           
         public AutorizationForm()
         {
             InitializeComponent();
@@ -43,6 +43,8 @@ namespace WindowsFormsApp1
             {
                 this.Hide();
                 GlobalForm global = new GlobalForm();
+                global.LoginText = this.loginfield.Text;
+               
                 global.Show();
             }
             else 

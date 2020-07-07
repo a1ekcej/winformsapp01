@@ -81,6 +81,7 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.textlog = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -583,6 +584,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.textlog);
             this.groupBox8.Controls.Add(this.label18);
             this.groupBox8.Controls.Add(this.label17);
             this.groupBox8.Controls.Add(this.label16);
@@ -629,6 +631,15 @@
             this.label14.Size = new System.Drawing.Size(130, 25);
             this.label14.TabIndex = 5;
             this.label14.Text = "Вы вошли как:";
+            // 
+            // textlog
+            // 
+            this.textlog.AutoSize = true;
+            this.textlog.Location = new System.Drawing.Point(70, 122);
+            this.textlog.Name = "textlog";
+            this.textlog.Size = new System.Drawing.Size(71, 25);
+            this.textlog.TabIndex = 7;
+            this.textlog.Text = "no user";
             // 
             // GlobalForm
             // 
@@ -717,6 +728,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label textlog;
     }
 }
 
