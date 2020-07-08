@@ -16,6 +16,12 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
+        public string TextInfo
+        {
+            get { return loginfield.Text; }
+            set { loginfield.Text = value; }
+
+        }
         private void registerbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -25,9 +31,11 @@ namespace WindowsFormsApp1
 
         private void signInbtn_Click(object sender, EventArgs e)
         {
+            
             String loginUser = loginfield.Text;
             String paswdUser = paswdfield.Text;
-            
+
+            TextInfo = loginUser;
             DBUsers db = new DBUsers();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
@@ -43,6 +51,8 @@ namespace WindowsFormsApp1
             {
                 this.Hide();
                 GlobalForm global = new GlobalForm();
+                global.LoginTXT = loginUser;
+               
                 global.Show();
             }
             else 
