@@ -53,7 +53,7 @@
             this.signInbtn.Margin = new System.Windows.Forms.Padding(15);
             this.signInbtn.Name = "signInbtn";
             this.signInbtn.Size = new System.Drawing.Size(215, 50);
-            this.signInbtn.TabIndex = 0;
+            this.signInbtn.TabIndex = 3;
             this.signInbtn.Text = "Войти";
             this.signInbtn.UseVisualStyleBackColor = false;
             this.signInbtn.Click += new System.EventHandler(this.signInbtn_Click);
@@ -76,21 +76,22 @@
             // 
             // paswdfield
             // 
+            this.paswdfield.Font = new System.Drawing.Font("Source Serif Pro", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.paswdfield.Location = new System.Drawing.Point(167, 205);
             this.paswdfield.Multiline = true;
             this.paswdfield.Name = "paswdfield";
             this.paswdfield.PasswordChar = '*';
             this.paswdfield.Size = new System.Drawing.Size(215, 64);
             this.paswdfield.TabIndex = 2;
-            this.paswdfield.UseSystemPasswordChar = true;
             // 
             // loginfield
             // 
+            this.loginfield.Font = new System.Drawing.Font("Source Serif Pro", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.loginfield.Location = new System.Drawing.Point(167, 106);
             this.loginfield.Multiline = true;
             this.loginfield.Name = "loginfield";
             this.loginfield.Size = new System.Drawing.Size(215, 64);
-            this.loginfield.TabIndex = 2;
+            this.loginfield.TabIndex = 1;
             // 
             // pictureBox2
             // 
@@ -126,7 +127,7 @@
             this.registerbtn.Margin = new System.Windows.Forms.Padding(15);
             this.registerbtn.Name = "registerbtn";
             this.registerbtn.Size = new System.Drawing.Size(215, 50);
-            this.registerbtn.TabIndex = 0;
+            this.registerbtn.TabIndex = 4;
             this.registerbtn.Text = "Регистрирация";
             this.registerbtn.UseVisualStyleBackColor = false;
             this.registerbtn.Click += new System.EventHandler(this.registerbtn_Click);

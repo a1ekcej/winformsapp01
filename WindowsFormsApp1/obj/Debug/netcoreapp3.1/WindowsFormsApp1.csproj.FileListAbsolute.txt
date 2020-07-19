@@ -71,4 +71,3 @@ D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreap
 D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csproj.CopyComplete
 D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\SshNet.Security.Cryptography.dll
 D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
-D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csproj.CoreCompileInputs.cache

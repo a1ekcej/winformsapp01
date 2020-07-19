@@ -22,6 +22,7 @@ namespace WindowsFormsApp1
             set { loginfield.Text = value; }
 
         }
+// Вызов формы регистрации
         private void registerbtn_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -29,12 +30,14 @@ namespace WindowsFormsApp1
             register.Show();
         }
 
+// Вызов формы авторизации
         private void signInbtn_Click(object sender, EventArgs e)
         {
             
             String loginUser = loginfield.Text;
             String paswdUser = paswdfield.Text;
-
+// Подключение к БД
+// Выполнение запроса на авторизацию
             TextInfo = loginUser;
             DBUsers db = new DBUsers();
             DataTable table = new DataTable();
@@ -46,17 +49,17 @@ namespace WindowsFormsApp1
 
             adapter.SelectCommand = command;
             adapter.Fill(table);
-
+// Проверка на вход в приложение
+// Передача данных в фыорму авторизации
             if (table.Rows.Count > 0)
             {
                 this.Hide();
                 GlobalForm global = new GlobalForm();
                 global.LoginTXT = loginUser;
-               
                 global.Show();
             }
             else 
-                MessageBox.Show("NO!");
+                MessageBox.Show("Login incorrect. Please try again!");
         }
     }
 }
