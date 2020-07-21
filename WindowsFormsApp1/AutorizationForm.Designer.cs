@@ -47,6 +47,7 @@
             this.signInbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signInbtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.signInbtn.FlatAppearance.BorderSize = 3;
+            this.signInbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.signInbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signInbtn.Font = new System.Drawing.Font("Noto Serif Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.signInbtn.Location = new System.Drawing.Point(167, 366);

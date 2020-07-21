@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup19 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup20 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup21 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.addUnit = new System.Windows.Forms.Button();
             this.remoteUnit = new System.Windows.Forms.Button();
             this.saveDB = new System.Windows.Forms.Button();
@@ -95,40 +95,60 @@
             // 
             // addUnit
             // 
+            this.addUnit.BackColor = System.Drawing.Color.SkyBlue;
+            this.addUnit.FlatAppearance.BorderSize = 3;
+            this.addUnit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.addUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addUnit.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.addUnit.Location = new System.Drawing.Point(28, 35);
             this.addUnit.Name = "addUnit";
             this.addUnit.Size = new System.Drawing.Size(156, 30);
             this.addUnit.TabIndex = 0;
             this.addUnit.Text = "ДОБАВИТЬ ЖИЛЬЦА";
-            this.addUnit.UseVisualStyleBackColor = true;
+            this.addUnit.UseVisualStyleBackColor = false;
             this.addUnit.Click += new System.EventHandler(this.addUnit_Click);
             // 
             // remoteUnit
             // 
+            this.remoteUnit.BackColor = System.Drawing.Color.SkyBlue;
+            this.remoteUnit.FlatAppearance.BorderSize = 3;
+            this.remoteUnit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.remoteUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.remoteUnit.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.remoteUnit.Location = new System.Drawing.Point(28, 71);
             this.remoteUnit.Name = "remoteUnit";
             this.remoteUnit.Size = new System.Drawing.Size(156, 30);
             this.remoteUnit.TabIndex = 1;
             this.remoteUnit.Text = "УДАЛИТЬ ЖИЛЬЦА";
-            this.remoteUnit.UseVisualStyleBackColor = true;
+            this.remoteUnit.UseVisualStyleBackColor = false;
             // 
             // saveDB
             // 
+            this.saveDB.BackColor = System.Drawing.Color.SkyBlue;
+            this.saveDB.FlatAppearance.BorderSize = 3;
+            this.saveDB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.saveDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveDB.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.saveDB.Location = new System.Drawing.Point(28, 107);
             this.saveDB.Name = "saveDB";
             this.saveDB.Size = new System.Drawing.Size(156, 30);
             this.saveDB.TabIndex = 2;
             this.saveDB.Text = "СОХРАНИТЬ";
-            this.saveDB.UseVisualStyleBackColor = true;
+            this.saveDB.UseVisualStyleBackColor = false;
             // 
             // exitApp
             // 
+            this.exitApp.BackColor = System.Drawing.Color.SkyBlue;
+            this.exitApp.FlatAppearance.BorderSize = 3;
+            this.exitApp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.exitApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitApp.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.exitApp.Location = new System.Drawing.Point(28, 143);
             this.exitApp.Name = "exitApp";
             this.exitApp.Size = new System.Drawing.Size(156, 30);
             this.exitApp.TabIndex = 2;
             this.exitApp.Text = "ВЫХОД";
-            this.exitApp.UseVisualStyleBackColor = true;
+            this.exitApp.UseVisualStyleBackColor = false;
             this.exitApp.Click += new System.EventHandler(this.exitApp_Click);
             // 
             // textBox1
@@ -468,16 +488,16 @@
             this.columnHeader4,
             this.columnHeader5});
             this.listView1.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            listViewGroup1.Header = "ListViewGroup";
-            listViewGroup1.Name = "listViewGroup1";
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.Name = "listViewGroup2";
-            listViewGroup3.Header = "ListViewGroup";
-            listViewGroup3.Name = "listViewGroup3";
+            listViewGroup19.Header = "ListViewGroup";
+            listViewGroup19.Name = "listViewGroup1";
+            listViewGroup20.Header = "ListViewGroup";
+            listViewGroup20.Name = "listViewGroup2";
+            listViewGroup21.Header = "ListViewGroup";
+            listViewGroup21.Name = "listViewGroup3";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2,
-            listViewGroup3});
+            listViewGroup19,
+            listViewGroup20,
+            listViewGroup21});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(16, 376);
             this.listView1.Name = "listView1";
