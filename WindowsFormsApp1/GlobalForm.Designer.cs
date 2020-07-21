@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.addUnit = new System.Windows.Forms.Button();
             this.remoteUnit = new System.Windows.Forms.Button();
             this.saveDB = new System.Windows.Forms.Button();
@@ -66,12 +63,12 @@
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            this.listViewElemDB = new System.Windows.Forms.ListView();
+            this.column_FIO = new System.Windows.Forms.ColumnHeader();
+            this.Column_Home = new System.Windows.Forms.ColumnHeader();
+            this.column_Cash = new System.Windows.Forms.ColumnHeader();
+            this.column_telnumb1 = new System.Windows.Forms.ColumnHeader();
+            this.column_telnumb2 = new System.Windows.Forms.ColumnHeader();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -277,14 +274,16 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.DarkGreen;
+            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.textBox13);
             this.groupBox4.Controls.Add(this.label2);
             this.groupBox4.Controls.Add(this.textBox2);
             this.groupBox4.Controls.Add(this.textBox3);
             this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.groupBox4.ForeColor = System.Drawing.SystemColors.Desktop;
             this.groupBox4.Location = new System.Drawing.Point(6, 66);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(201, 200);
@@ -313,14 +312,16 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.DarkGreen;
+            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.textBox12);
             this.groupBox3.Controls.Add(this.textBox9);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.textBox11);
+            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.groupBox3.ForeColor = System.Drawing.SystemColors.Desktop;
             this.groupBox3.Location = new System.Drawing.Point(213, 66);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(201, 200);
@@ -387,12 +388,14 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.DarkGreen;
+            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox2.Controls.Add(this.groupBox6);
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.groupBox2.ForeColor = System.Drawing.SystemColors.Desktop;
             this.groupBox2.Location = new System.Drawing.Point(420, 66);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(201, 200);
@@ -480,58 +483,58 @@
             this.textBox6.Text = "9999";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // listView1
+            // listViewElemDB
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-            this.listView1.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            listViewGroup1.Header = "ListViewGroup";
-            listViewGroup1.Name = "listViewGroup1";
-            listViewGroup2.Header = "ListViewGroup";
-            listViewGroup2.Name = "listViewGroup2";
-            listViewGroup3.Header = "ListViewGroup";
-            listViewGroup3.Name = "listViewGroup3";
-            this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup1,
-            listViewGroup2,
-            listViewGroup3});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(16, 376);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(628, 198);
-            this.listView1.TabIndex = 9;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.listViewElemDB.Alignment = System.Windows.Forms.ListViewAlignment.Default;
+            this.listViewElemDB.AllowColumnReorder = true;
+            this.listViewElemDB.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.listViewElemDB.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.column_FIO,
+            this.Column_Home,
+            this.column_Cash,
+            this.column_telnumb1,
+            this.column_telnumb2});
+            this.listViewElemDB.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.listViewElemDB.FullRowSelect = true;
+            this.listViewElemDB.GridLines = true;
+            this.listViewElemDB.HideSelection = false;
+            this.listViewElemDB.Location = new System.Drawing.Point(16, 376);
+            this.listViewElemDB.Name = "listViewElemDB";
+            this.listViewElemDB.Size = new System.Drawing.Size(628, 198);
+            this.listViewElemDB.TabIndex = 9;
+            this.listViewElemDB.UseCompatibleStateImageBehavior = false;
+            this.listViewElemDB.View = System.Windows.Forms.View.Details;
             // 
-            // columnHeader1
+            // column_FIO
             // 
-            this.columnHeader1.Tag = "1";
-            this.columnHeader1.Text = "ФИО";
-            this.columnHeader1.Width = 150;
+            this.column_FIO.Name = "column_FIO";
+            this.column_FIO.Tag = "1";
+            this.column_FIO.Text = "ФИО";
+            this.column_FIO.Width = 150;
             // 
-            // columnHeader2
+            // Column_Home
             // 
-            this.columnHeader2.Text = "Арендует";
-            this.columnHeader2.Width = 150;
+            this.Column_Home.Name = "Column_Home";
+            this.Column_Home.Text = "Арендует";
+            this.Column_Home.Width = 150;
             // 
-            // columnHeader3
+            // column_Cash
             // 
-            this.columnHeader3.Text = "Платит";
-            this.columnHeader3.Width = 100;
+            this.column_Cash.Name = "column_Cash";
+            this.column_Cash.Text = "Платит";
+            this.column_Cash.Width = 100;
             // 
-            // columnHeader4
+            // column_telnumb1
             // 
-            this.columnHeader4.Text = "Телефон №1";
-            this.columnHeader4.Width = 112;
+            this.column_telnumb1.Name = "column_telnumb1";
+            this.column_telnumb1.Text = "Телефон №1";
+            this.column_telnumb1.Width = 112;
             // 
-            // columnHeader5
+            // column_telnumb2
             // 
-            this.columnHeader5.Text = "Телефон №2";
-            this.columnHeader5.Width = 112;
+            this.column_telnumb2.Name = "column_telnumb2";
+            this.column_telnumb2.Text = "Телефон №2";
+            this.column_telnumb2.Width = 112;
             // 
             // groupBox5
             // 
@@ -667,7 +670,7 @@
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.listViewElemDB);
             this.Controls.Add(this.groupBox1);
             this.Name = "GlobalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -725,11 +728,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox12;
      
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        public System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ListView listViewElemDB;
+        private System.Windows.Forms.ColumnHeader Column_Home;
+        private System.Windows.Forms.ColumnHeader column_Cash;
+        private System.Windows.Forms.ColumnHeader column_telnumb1;
+        public System.Windows.Forms.ColumnHeader column_FIO;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox comboBox1;
@@ -737,7 +740,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader column_telnumb2;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label14;
