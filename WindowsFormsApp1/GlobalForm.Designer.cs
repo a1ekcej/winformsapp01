@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewGroup listViewGroup19 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup20 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
-            System.Windows.Forms.ListViewGroup listViewGroup21 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup1 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup2 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
+            System.Windows.Forms.ListViewGroup listViewGroup3 = new System.Windows.Forms.ListViewGroup("ListViewGroup", System.Windows.Forms.HorizontalAlignment.Left);
             this.addUnit = new System.Windows.Forms.Button();
             this.remoteUnit = new System.Windows.Forms.Button();
             this.saveDB = new System.Windows.Forms.Button();
@@ -153,7 +153,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(4, 37);
+            this.textBox1.Location = new System.Drawing.Point(7, 37);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(183, 23);
             this.textBox1.TabIndex = 4;
@@ -200,7 +200,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(193, 37);
+            this.textBox4.Location = new System.Drawing.Point(209, 37);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(183, 23);
             this.textBox4.TabIndex = 4;
@@ -209,7 +209,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(382, 37);
+            this.textBox5.Location = new System.Drawing.Point(411, 37);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(183, 23);
             this.textBox5.TabIndex = 4;
@@ -255,6 +255,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.groupBox3);
@@ -276,7 +277,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox4.BackColor = System.Drawing.Color.DarkGreen;
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.textBox13);
             this.groupBox4.Controls.Add(this.label2);
@@ -312,7 +313,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox3.BackColor = System.Drawing.Color.DarkGreen;
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.textBox12);
             this.groupBox3.Controls.Add(this.textBox9);
@@ -386,7 +387,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox2.BackColor = System.Drawing.Color.DarkGreen;
             this.groupBox2.Controls.Add(this.groupBox6);
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.label7);
@@ -488,16 +489,16 @@
             this.columnHeader4,
             this.columnHeader5});
             this.listView1.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            listViewGroup19.Header = "ListViewGroup";
-            listViewGroup19.Name = "listViewGroup1";
-            listViewGroup20.Header = "ListViewGroup";
-            listViewGroup20.Name = "listViewGroup2";
-            listViewGroup21.Header = "ListViewGroup";
-            listViewGroup21.Name = "listViewGroup3";
+            listViewGroup1.Header = "ListViewGroup";
+            listViewGroup1.Name = "listViewGroup1";
+            listViewGroup2.Header = "ListViewGroup";
+            listViewGroup2.Name = "listViewGroup2";
+            listViewGroup3.Header = "ListViewGroup";
+            listViewGroup3.Name = "listViewGroup3";
             this.listView1.Groups.AddRange(new System.Windows.Forms.ListViewGroup[] {
-            listViewGroup19,
-            listViewGroup20,
-            listViewGroup21});
+            listViewGroup1,
+            listViewGroup2,
+            listViewGroup3});
             this.listView1.HideSelection = false;
             this.listView1.Location = new System.Drawing.Point(16, 376);
             this.listView1.Name = "listView1";
@@ -593,7 +594,7 @@
             this.groupBox8.Controls.Add(this.label16);
             this.groupBox8.Controls.Add(this.label14);
             this.groupBox8.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.groupBox8.Location = new System.Drawing.Point(655, 64);
+            this.groupBox8.Location = new System.Drawing.Point(655, 72);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);

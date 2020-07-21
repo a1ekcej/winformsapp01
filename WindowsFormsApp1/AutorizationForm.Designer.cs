@@ -43,7 +43,7 @@
             // 
             // signInbtn
             // 
-            this.signInbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.signInbtn.BackColor = System.Drawing.Color.SkyBlue;
             this.signInbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.signInbtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.signInbtn.FlatAppearance.BorderSize = 3;
@@ -61,16 +61,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Silver;
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.groupBox1.Controls.Add(this.paswdfield);
             this.groupBox1.Controls.Add(this.loginfield);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.registerbtn);
             this.groupBox1.Controls.Add(this.signInbtn);
-            this.groupBox1.Location = new System.Drawing.Point(12, 0);
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(535, 514);
+            this.groupBox1.Size = new System.Drawing.Size(535, 502);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Авторизация пользоваттеля";
@@ -118,10 +118,11 @@
             // 
             // registerbtn
             // 
-            this.registerbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.registerbtn.BackColor = System.Drawing.Color.SkyBlue;
             this.registerbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.registerbtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.registerbtn.FlatAppearance.BorderSize = 3;
+            this.registerbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.registerbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registerbtn.Font = new System.Drawing.Font("Noto Serif Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.registerbtn.Location = new System.Drawing.Point(167, 446);
@@ -135,7 +136,7 @@
             // 
             // AutorizationForm
             // 
-            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.ClientSize = new System.Drawing.Size(559, 526);
             this.Controls.Add(this.groupBox1);
             this.Name = "AutorizationForm";
