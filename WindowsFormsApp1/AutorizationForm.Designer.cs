@@ -50,7 +50,7 @@
             this.signInbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.signInbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signInbtn.Font = new System.Drawing.Font("Noto Serif Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.signInbtn.Location = new System.Drawing.Point(167, 366);
+            this.signInbtn.Location = new System.Drawing.Point(167, 367);
             this.signInbtn.Margin = new System.Windows.Forms.Padding(15);
             this.signInbtn.Name = "signInbtn";
             this.signInbtn.Size = new System.Drawing.Size(215, 50);
@@ -77,22 +77,26 @@
             // 
             // paswdfield
             // 
-            this.paswdfield.Font = new System.Drawing.Font("Source Serif Pro", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.paswdfield.Font = new System.Drawing.Font("Source Serif Pro", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.paswdfield.Location = new System.Drawing.Point(167, 205);
             this.paswdfield.Multiline = true;
             this.paswdfield.Name = "paswdfield";
             this.paswdfield.PasswordChar = '*';
+            this.paswdfield.PlaceholderText = "password";
             this.paswdfield.Size = new System.Drawing.Size(215, 64);
             this.paswdfield.TabIndex = 2;
+            this.paswdfield.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // loginfield
             // 
-            this.loginfield.Font = new System.Drawing.Font("Source Serif Pro", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.loginfield.Font = new System.Drawing.Font("Source Serif Pro", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.loginfield.Location = new System.Drawing.Point(167, 106);
             this.loginfield.Multiline = true;
             this.loginfield.Name = "loginfield";
+            this.loginfield.PlaceholderText = "alexej";
             this.loginfield.Size = new System.Drawing.Size(215, 64);
             this.loginfield.TabIndex = 1;
+            this.loginfield.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // pictureBox2
             // 
@@ -125,7 +129,7 @@
             this.registerbtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.registerbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registerbtn.Font = new System.Drawing.Font("Noto Serif Cond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.registerbtn.Location = new System.Drawing.Point(167, 446);
+            this.registerbtn.Location = new System.Drawing.Point(167, 434);
             this.registerbtn.Margin = new System.Windows.Forms.Padding(15);
             this.registerbtn.Name = "registerbtn";
             this.registerbtn.Size = new System.Drawing.Size(215, 50);
