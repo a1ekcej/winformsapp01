@@ -5,7 +5,7 @@ using System.Text;
 
 namespace WindowsFormsApp1
 {
-    class DBUsers
+    class UsersAutorisation
     {
         MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;user=root;password=root;database=mydb");
 

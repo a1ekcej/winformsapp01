@@ -88,3 +88,10 @@ D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreap
 D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+D:\KoDiNG\VStudio2019_Apps\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csproj.CoreCompileInputs.cache

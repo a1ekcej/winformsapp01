@@ -39,7 +39,7 @@ namespace WindowsFormsApp1
 // Подключение к БД
 // Выполнение запроса на авторизацию
             TextInfo = loginUser;
-            DBUsers db = new DBUsers();
+            UsersAutorisation db = new UsersAutorisation();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
             MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @ul AND `paswd` = @up", db.GetConnection());

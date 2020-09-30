@@ -64,6 +64,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.listViewElemDB = new System.Windows.Forms.ListView();
+            this.column_Status = new System.Windows.Forms.ColumnHeader();
             this.column_FIO = new System.Windows.Forms.ColumnHeader();
             this.Column_Home = new System.Windows.Forms.ColumnHeader();
             this.column_Cash = new System.Windows.Forms.ColumnHeader();
@@ -152,27 +153,27 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(7, 37);
             this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "Иванов";
             this.textBox1.Size = new System.Drawing.Size(183, 23);
             this.textBox1.TabIndex = 4;
-            this.textBox1.Text = "Иванов";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(11, 37);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PlaceholderText = "8(900) -111-11-11";
             this.textBox2.Size = new System.Drawing.Size(152, 23);
             this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "8(900) -111-11-11";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(11, 146);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "as*****g@mail.ru";
             this.textBox3.Size = new System.Drawing.Size(147, 23);
             this.textBox3.TabIndex = 4;
-            this.textBox3.Text = "as*****g@mail.ru";
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
@@ -199,18 +200,18 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(209, 37);
             this.textBox4.Name = "textBox4";
+            this.textBox4.PlaceholderText = "Иван";
             this.textBox4.Size = new System.Drawing.Size(183, 23);
             this.textBox4.TabIndex = 4;
-            this.textBox4.Text = "Иван";
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(411, 37);
             this.textBox5.Name = "textBox5";
+            this.textBox5.PlaceholderText = "Петрович";
             this.textBox5.Size = new System.Drawing.Size(183, 23);
             this.textBox5.TabIndex = 4;
-            this.textBox5.Text = "Петрович";
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // progressBar1
@@ -305,9 +306,9 @@
             // 
             this.textBox13.Location = new System.Drawing.Point(11, 91);
             this.textBox13.Name = "textBox13";
+            this.textBox13.PlaceholderText = "8(900) -111-11-11";
             this.textBox13.Size = new System.Drawing.Size(152, 23);
             this.textBox13.TabIndex = 4;
-            this.textBox13.Text = "8(900) -111-11-11";
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox3
@@ -343,18 +344,18 @@
             // 
             this.textBox12.Location = new System.Drawing.Point(6, 146);
             this.textBox12.Name = "textBox12";
+            this.textBox12.PlaceholderText = "10000";
             this.textBox12.Size = new System.Drawing.Size(168, 23);
             this.textBox12.TabIndex = 4;
-            this.textBox12.Text = "10000";
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(6, 91);
             this.textBox9.Name = "textBox9";
+            this.textBox9.PlaceholderText = "10000";
             this.textBox9.Size = new System.Drawing.Size(168, 23);
             this.textBox9.TabIndex = 4;
-            this.textBox9.Text = "10000";
             this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
@@ -381,9 +382,9 @@
             // 
             this.textBox11.Location = new System.Drawing.Point(6, 37);
             this.textBox11.Name = "textBox11";
+            this.textBox11.PlaceholderText = "09.09.2020";
             this.textBox11.Size = new System.Drawing.Size(98, 23);
             this.textBox11.TabIndex = 4;
-            this.textBox11.Text = "09.09.2020";
             this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox2
@@ -431,9 +432,9 @@
             // 
             this.textBox10.Location = new System.Drawing.Point(6, 93);
             this.textBox10.Name = "textBox10";
+            this.textBox10.PlaceholderText = "ул. Ивановская, 36";
             this.textBox10.Size = new System.Drawing.Size(159, 23);
             this.textBox10.TabIndex = 4;
-            this.textBox10.Text = "ул. Ивановская, 36";
             this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
@@ -450,9 +451,9 @@
             // 
             this.textBox8.Location = new System.Drawing.Point(6, 37);
             this.textBox8.Name = "textBox8";
+            this.textBox8.PlaceholderText = "г. Иваново";
             this.textBox8.Size = new System.Drawing.Size(159, 23);
             this.textBox8.TabIndex = 4;
-            this.textBox8.Text = "г. Иваново";
             this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox7
@@ -478,9 +479,9 @@
             // 
             this.textBox6.Location = new System.Drawing.Point(6, 37);
             this.textBox6.Name = "textBox6";
+            this.textBox6.PlaceholderText = "9999";
             this.textBox6.Size = new System.Drawing.Size(47, 23);
             this.textBox6.TabIndex = 4;
-            this.textBox6.Text = "9999";
             this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // listViewElemDB
@@ -489,6 +490,7 @@
             this.listViewElemDB.AllowColumnReorder = true;
             this.listViewElemDB.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.listViewElemDB.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.column_Status,
             this.column_FIO,
             this.Column_Home,
             this.column_Cash,
@@ -504,6 +506,11 @@
             this.listViewElemDB.TabIndex = 9;
             this.listViewElemDB.UseCompatibleStateImageBehavior = false;
             this.listViewElemDB.View = System.Windows.Forms.View.Details;
+            // 
+            // column_Status
+            // 
+            this.column_Status.Text = "Статус";
+            this.column_Status.Width = 80;
             // 
             // column_FIO
             // 
@@ -749,6 +756,7 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label textFIO;
         private System.Windows.Forms.Label TXTloginUser;
+        private System.Windows.Forms.ColumnHeader column_Status;
     }
 }
 
