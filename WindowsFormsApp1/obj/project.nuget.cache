@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SZFfvLr2uC8ygz8u2dcpR2pnoq2BLV1g+HNRc+HHitC7ZZc3zhfkuw+xFe2EF0cdwsOk4v3gET+LzPGrUaO4mQ==",
+  "dgSpecHash": "y5vM78AaCobJ0NWRrB/ZOolnMYRYLhksxlW8b9ud6WsekoG3+bh+4ThPCpCqfwZbVP+UxdXcsd8W1yw6AidOBQ==",
   "success": true,
-  "projectFilePath": "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+  "projectFilePath": "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ZaRt\\.nuget\\packages\\bouncycastle.netcore\\1.8.3\\bouncycastle.netcore.1.8.3.nupkg.sha512",
     "C:\\Users\\ZaRt\\.nuget\\packages\\google.protobuf\\3.6.1\\google.protobuf.3.6.1.nupkg.sha512",

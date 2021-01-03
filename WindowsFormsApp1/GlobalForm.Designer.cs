@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GlobalForm));
             this.addUnit = new System.Windows.Forms.Button();
             this.remoteUnit = new System.Windows.Forms.Button();
             this.saveDB = new System.Windows.Forms.Button();
@@ -160,7 +161,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(11, 37);
+            this.textBox2.Location = new System.Drawing.Point(6, 37);
             this.textBox2.Name = "textBox2";
             this.textBox2.PlaceholderText = "8(900) -111-11-11";
             this.textBox2.Size = new System.Drawing.Size(152, 23);
@@ -169,7 +170,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(11, 146);
+            this.textBox3.Location = new System.Drawing.Point(6, 156);
             this.textBox3.Name = "textBox3";
             this.textBox3.PlaceholderText = "as*****g@mail.ru";
             this.textBox3.Size = new System.Drawing.Size(147, 23);
@@ -179,8 +180,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(18, 19);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(6, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(153, 15);
             this.label2.TabIndex = 5;
@@ -189,8 +192,9 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(28, 128);
+            this.label3.Location = new System.Drawing.Point(6, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(114, 15);
             this.label3.TabIndex = 5;
@@ -224,6 +228,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(65, 19);
             this.label4.Name = "label4";
@@ -234,6 +239,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(266, 19);
             this.label5.Name = "label5";
@@ -244,6 +250,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(443, 19);
             this.label6.Name = "label6";
@@ -253,7 +260,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.groupBox4);
             this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.groupBox3);
@@ -270,12 +277,11 @@
             this.groupBox1.Size = new System.Drawing.Size(628, 306);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Данные Арендатора";
             this.groupBox1.Visible = false;
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.textBox13);
             this.groupBox4.Controls.Add(this.label2);
@@ -295,8 +301,10 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.WhiteSmoke;
             this.label11.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(18, 73);
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(6, 78);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(147, 15);
             this.label11.TabIndex = 5;
@@ -304,7 +312,7 @@
             // 
             // textBox13
             // 
-            this.textBox13.Location = new System.Drawing.Point(11, 91);
+            this.textBox13.Location = new System.Drawing.Point(6, 96);
             this.textBox13.Name = "textBox13";
             this.textBox13.PlaceholderText = "8(900) -111-11-11";
             this.textBox13.Size = new System.Drawing.Size(152, 23);
@@ -313,7 +321,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.textBox12);
             this.groupBox3.Controls.Add(this.textBox9);
@@ -333,8 +341,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(6, 128);
+            this.label1.Location = new System.Drawing.Point(6, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 15);
             this.label1.TabIndex = 5;
@@ -342,7 +351,7 @@
             // 
             // textBox12
             // 
-            this.textBox12.Location = new System.Drawing.Point(6, 146);
+            this.textBox12.Location = new System.Drawing.Point(6, 156);
             this.textBox12.Name = "textBox12";
             this.textBox12.PlaceholderText = "10000";
             this.textBox12.Size = new System.Drawing.Size(168, 23);
@@ -351,7 +360,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(6, 91);
+            this.textBox9.Location = new System.Drawing.Point(6, 96);
             this.textBox9.Name = "textBox9";
             this.textBox9.PlaceholderText = "10000";
             this.textBox9.Size = new System.Drawing.Size(168, 23);
@@ -361,8 +370,9 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.White;
             this.label9.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(6, 73);
+            this.label9.Location = new System.Drawing.Point(6, 78);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(167, 15);
             this.label9.TabIndex = 5;
@@ -371,6 +381,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
             this.label10.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(6, 19);
             this.label10.Name = "label10";
@@ -389,7 +400,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.groupBox6);
             this.groupBox2.Controls.Add(this.textBox7);
             this.groupBox2.Controls.Add(this.label7);
@@ -406,7 +417,7 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox6.BackColor = System.Drawing.Color.Transparent;
             this.groupBox6.Controls.Add(this.label13);
             this.groupBox6.Controls.Add(this.textBox10);
             this.groupBox6.Controls.Add(this.label8);
@@ -421,6 +432,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.White;
             this.label13.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(6, 75);
             this.label13.Name = "label13";
@@ -440,6 +452,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(6, 19);
             this.label8.Name = "label8";
@@ -468,6 +481,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(6, 19);
             this.label7.Name = "label7";
@@ -545,7 +559,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox5.BackColor = System.Drawing.Color.Transparent;
             this.groupBox5.Controls.Add(this.label12);
             this.groupBox5.Controls.Add(this.comboBox1);
             this.groupBox5.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
@@ -554,11 +568,11 @@
             this.groupBox5.Size = new System.Drawing.Size(628, 58);
             this.groupBox5.TabIndex = 10;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Поиск арендатора";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Location = new System.Drawing.Point(3, 25);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(141, 16);
@@ -580,7 +594,7 @@
             // 
             // groupBox7
             // 
-            this.groupBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox7.BackColor = System.Drawing.Color.Transparent;
             this.groupBox7.Controls.Add(this.exitApp);
             this.groupBox7.Controls.Add(this.addUnit);
             this.groupBox7.Controls.Add(this.remoteUnit);
@@ -596,7 +610,7 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.groupBox8.BackColor = System.Drawing.Color.Transparent;
             this.groupBox8.Controls.Add(this.TXTloginUser);
             this.groupBox8.Controls.Add(this.textFIO);
             this.groupBox8.Controls.Add(this.label18);
@@ -604,19 +618,20 @@
             this.groupBox8.Controls.Add(this.label16);
             this.groupBox8.Controls.Add(this.label14);
             this.groupBox8.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.groupBox8.Location = new System.Drawing.Point(655, 72);
+            this.groupBox8.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.groupBox8.Location = new System.Drawing.Point(655, 64);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox8.Size = new System.Drawing.Size(210, 137);
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Авторизация";
             // 
             // TXTloginUser
             // 
             this.TXTloginUser.AutoSize = true;
-            this.TXTloginUser.Location = new System.Drawing.Point(49, 73);
+            this.TXTloginUser.BackColor = System.Drawing.Color.White;
+            this.TXTloginUser.Location = new System.Drawing.Point(55, 72);
             this.TXTloginUser.Name = "TXTloginUser";
             this.TXTloginUser.Size = new System.Drawing.Size(44, 16);
             this.TXTloginUser.TabIndex = 8;
@@ -651,6 +666,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.White;
             this.label16.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label16.Location = new System.Drawing.Point(5, 73);
             this.label16.Name = "label16";
@@ -661,6 +677,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.White;
             this.label14.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.label14.Location = new System.Drawing.Point(5, 19);
             this.label14.Name = "label14";
@@ -672,7 +689,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.BackColor = System.Drawing.Color.Teal;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(878, 587);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);

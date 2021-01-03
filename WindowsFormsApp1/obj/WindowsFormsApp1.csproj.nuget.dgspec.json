@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
+    "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
   },
   "projects": {
-    "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
+    "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "projectUniqueName": "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
         "projectName": "WindowsFormsApp1",
-        "projectPath": "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "projectPath": "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
         "packagesPath": "C:\\Users\\ZaRt\\.nuget\\packages\\",
-        "outputPath": "D:\\KoDiNG\\VStudio2019_Apps\\WindowsFormsApp1\\WindowsFormsApp1\\obj\\",
+        "outputPath": "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -31,6 +31,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,6 +43,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -78,7 +80,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
