@@ -76,6 +76,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             this.TXTloginUser = new System.Windows.Forms.Label();
             this.textFIO = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -103,7 +105,7 @@
             this.addUnit.Name = "addUnit";
             this.addUnit.Size = new System.Drawing.Size(156, 30);
             this.addUnit.TabIndex = 0;
-            this.addUnit.Text = "ДОБАВИТЬ ЖИЛЬЦА";
+            this.addUnit.Text = "Новые данные";
             this.addUnit.UseVisualStyleBackColor = false;
             this.addUnit.Click += new System.EventHandler(this.addUnit_Click);
             // 
@@ -118,7 +120,7 @@
             this.remoteUnit.Name = "remoteUnit";
             this.remoteUnit.Size = new System.Drawing.Size(156, 30);
             this.remoteUnit.TabIndex = 1;
-            this.remoteUnit.Text = "УДАЛИТЬ ЖИЛЬЦА";
+            this.remoteUnit.Text = "Удалить";
             this.remoteUnit.UseVisualStyleBackColor = false;
             // 
             // saveDB
@@ -132,7 +134,7 @@
             this.saveDB.Name = "saveDB";
             this.saveDB.Size = new System.Drawing.Size(156, 30);
             this.saveDB.TabIndex = 2;
-            this.saveDB.Text = "СОХРАНИТЬ";
+            this.saveDB.Text = "Сохранить";
             this.saveDB.UseVisualStyleBackColor = false;
             // 
             // exitApp
@@ -146,13 +148,13 @@
             this.exitApp.Name = "exitApp";
             this.exitApp.Size = new System.Drawing.Size(156, 30);
             this.exitApp.TabIndex = 2;
-            this.exitApp.Text = "ВЫХОД";
+            this.exitApp.Text = "Выход";
             this.exitApp.UseVisualStyleBackColor = false;
             this.exitApp.Click += new System.EventHandler(this.exitApp_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(7, 37);
+            this.textBox1.Location = new System.Drawing.Point(15, 37);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "Иванов";
             this.textBox1.Size = new System.Drawing.Size(183, 23);
@@ -202,7 +204,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(209, 37);
+            this.textBox4.Location = new System.Drawing.Point(222, 37);
             this.textBox4.Name = "textBox4";
             this.textBox4.PlaceholderText = "Иван";
             this.textBox4.Size = new System.Drawing.Size(183, 23);
@@ -211,7 +213,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(411, 37);
+            this.textBox5.Location = new System.Drawing.Point(430, 37);
             this.textBox5.Name = "textBox5";
             this.textBox5.PlaceholderText = "Петрович";
             this.textBox5.Size = new System.Drawing.Size(183, 23);
@@ -230,7 +232,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(65, 19);
+            this.label4.Location = new System.Drawing.Point(74, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(65, 17);
             this.label4.TabIndex = 5;
@@ -241,7 +243,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(266, 19);
+            this.label5.Location = new System.Drawing.Point(294, 19);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 17);
             this.label5.TabIndex = 5;
@@ -252,7 +254,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(443, 19);
+            this.label6.Location = new System.Drawing.Point(489, 19);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 17);
             this.label6.TabIndex = 5;
@@ -473,9 +475,9 @@
             // 
             this.textBox7.Location = new System.Drawing.Point(59, 37);
             this.textBox7.Name = "textBox7";
+            this.textBox7.PlaceholderText = "999999";
             this.textBox7.Size = new System.Drawing.Size(91, 23);
             this.textBox7.TabIndex = 4;
-            this.textBox7.Text = "999999";
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
@@ -502,7 +504,7 @@
             // 
             this.listViewElemDB.Alignment = System.Windows.Forms.ListViewAlignment.Default;
             this.listViewElemDB.AllowColumnReorder = true;
-            this.listViewElemDB.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.listViewElemDB.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.listViewElemDB.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.column_Status,
             this.column_FIO,
@@ -573,7 +575,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(3, 25);
+            this.label12.Location = new System.Drawing.Point(3, 26);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(141, 16);
             this.label12.TabIndex = 1;
@@ -611,6 +613,8 @@
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox8.Controls.Add(this.label15);
+            this.groupBox8.Controls.Add(this.label19);
             this.groupBox8.Controls.Add(this.TXTloginUser);
             this.groupBox8.Controls.Add(this.textFIO);
             this.groupBox8.Controls.Add(this.label18);
@@ -627,15 +631,36 @@
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
             // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.White;
+            this.label15.Location = new System.Drawing.Point(75, 85);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(130, 16);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "users";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.White;
+            this.label19.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label19.Location = new System.Drawing.Point(5, 85);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(60, 16);
+            this.label19.TabIndex = 9;
+            this.label19.Text = "login:";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // TXTloginUser
             // 
-            this.TXTloginUser.AutoSize = true;
             this.TXTloginUser.BackColor = System.Drawing.Color.White;
-            this.TXTloginUser.Location = new System.Drawing.Point(55, 72);
+            this.TXTloginUser.Location = new System.Drawing.Point(75, 45);
             this.TXTloginUser.Name = "TXTloginUser";
-            this.TXTloginUser.Size = new System.Drawing.Size(44, 16);
+            this.TXTloginUser.Size = new System.Drawing.Size(130, 16);
             this.TXTloginUser.TabIndex = 8;
             this.TXTloginUser.Text = "users";
+            this.TXTloginUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textFIO
             // 
@@ -665,14 +690,14 @@
             // 
             // label16
             // 
-            this.label16.AutoSize = true;
             this.label16.BackColor = System.Drawing.Color.White;
             this.label16.Font = new System.Drawing.Font("Noto Serif Cond", 8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(5, 73);
+            this.label16.Location = new System.Drawing.Point(5, 45);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(35, 15);
+            this.label16.Size = new System.Drawing.Size(60, 16);
             this.label16.TabIndex = 5;
             this.label16.Text = "ФИО:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label14
             // 
@@ -776,6 +801,8 @@
         private System.Windows.Forms.Label textFIO;
         private System.Windows.Forms.Label TXTloginUser;
         private System.Windows.Forms.ColumnHeader column_Status;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label19;
     }
 }
 

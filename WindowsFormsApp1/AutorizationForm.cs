@@ -15,13 +15,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
-        public string TextInfo
-        {
-            get { return loginfield.Text; }
-            set { loginfield.Text = value; }
-
-        }
 // Вызов формы регистрации
         private void registerbtn_Click(object sender, EventArgs e)
         {
@@ -38,7 +31,6 @@ namespace WindowsFormsApp1
             String paswdUser = paswdfield.Text;
 // Подключение к БД
 // Выполнение запроса на авторизацию
-            TextInfo = loginUser;
             UsersAutorisation db = new UsersAutorisation();
             DataTable table = new DataTable();
             MySqlDataAdapter adapter = new MySqlDataAdapter();
