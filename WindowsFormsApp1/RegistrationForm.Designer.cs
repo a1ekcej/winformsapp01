@@ -29,46 +29,46 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.textBoxLogin = new System.Windows.Forms.TextBox();
+            this.btnRegisterUser = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxConfirmPaswd = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.textBoxPaswd = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gbmasterPased = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBoxAdminLog = new System.Windows.Forms.TextBox();
+            this.textBoxAdminPaswd = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
-            this.gbmasterPased.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.gbmasterPased.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonExit
             // 
-            this.button1.BackColor = System.Drawing.Color.SkyBlue;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(432, 247);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 30);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "ВЫХОД";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button4_Click);
+            this.buttonExit.BackColor = System.Drawing.Color.SkyBlue;
+            this.buttonExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonExit.FlatAppearance.BorderSize = 3;
+            this.buttonExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExit.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.buttonExit.Location = new System.Drawing.Point(432, 247);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(112, 30);
+            this.buttonExit.TabIndex = 2;
+            this.buttonExit.Text = "ВЫХОД";
+            this.buttonExit.UseVisualStyleBackColor = false;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // label1
             // 
@@ -83,45 +83,46 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Введите ваш логин:";
             // 
-            // textBox1
+            // textBoxLogin
             // 
-            this.textBox1.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(136, 21);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(145, 26);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxLogin.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.textBoxLogin.Location = new System.Drawing.Point(136, 21);
+            this.textBoxLogin.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxLogin.Multiline = true;
+            this.textBoxLogin.Name = "textBoxLogin";
+            this.textBoxLogin.Size = new System.Drawing.Size(145, 26);
+            this.textBoxLogin.TabIndex = 1;
+            this.textBoxLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button2
+            // btnRegisterUser
             // 
-            this.button2.BackColor = System.Drawing.Color.SkyBlue;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 3;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(219, 240);
-            this.button2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 60);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 30);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Зарегистрироваться";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnRegisterUser.BackColor = System.Drawing.Color.SkyBlue;
+            this.btnRegisterUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegisterUser.FlatAppearance.BorderSize = 3;
+            this.btnRegisterUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegisterUser.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnRegisterUser.Location = new System.Drawing.Point(219, 240);
+            this.btnRegisterUser.Margin = new System.Windows.Forms.Padding(7, 6, 7, 60);
+            this.btnRegisterUser.Name = "btnRegisterUser";
+            this.btnRegisterUser.Size = new System.Drawing.Size(177, 30);
+            this.btnRegisterUser.TabIndex = 0;
+            this.btnRegisterUser.Text = "Зарегистрироваться";
+            this.btnRegisterUser.UseVisualStyleBackColor = false;
+            this.btnRegisterUser.Click += new System.EventHandler(this.btnRegisterUser_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.groupBox2);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBoxConfirmPaswd);
+            this.groupBox1.Controls.Add(this.textBoxEmail);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.textBoxPaswd);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.textBoxLogin);
+            this.groupBox1.Controls.Add(this.btnRegisterUser);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Location = new System.Drawing.Point(8, 7);
@@ -132,68 +133,16 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
-            // textBox4
+            // groupBox2
             // 
-            this.textBox4.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox4.Location = new System.Drawing.Point(136, 94);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(145, 26);
-            this.textBox4.TabIndex = 1;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox3.Location = new System.Drawing.Point(136, 131);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(145, 26);
-            this.textBox3.TabIndex = 1;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(10, 99);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(116, 17);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Придумайте пароль:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
-            this.label3.Font = new System.Drawing.Font("Noto Sans Cond", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(5, 273);
-            this.label3.Margin = new System.Windows.Forms.Padding(7, 12, 7, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(324, 15);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "На Ваш email было отправено письмо для подтверждения регистрации.";
-            this.label3.Visible = false;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.White;
-            this.radioButton2.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(336, 20);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(47, 21);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "user";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.radioButton2);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Location = new System.Drawing.Point(5, 171);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(391, 59);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
             // 
             // radioButton1
             // 
@@ -209,16 +158,19 @@
             this.radioButton1.Text = "admin";
             this.radioButton1.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // radioButton2
             // 
-            this.textBox2.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox2.Location = new System.Drawing.Point(136, 58);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(145, 26);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.BackColor = System.Drawing.Color.White;
+            this.radioButton2.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.radioButton2.Location = new System.Drawing.Point(336, 20);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(47, 21);
+            this.radioButton2.TabIndex = 5;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "user";
+            this.radioButton2.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -233,6 +185,66 @@
             this.label5.Size = new System.Drawing.Size(247, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Выберите назначение профиля пользователя:";
+            // 
+            // textBoxConfirmPaswd
+            // 
+            this.textBoxConfirmPaswd.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.textBoxConfirmPaswd.Location = new System.Drawing.Point(136, 94);
+            this.textBoxConfirmPaswd.Margin = new System.Windows.Forms.Padding(2);
+            this.textBoxConfirmPaswd.Multiline = true;
+            this.textBoxConfirmPaswd.Name = "textBoxConfirmPaswd";
+            this.textBoxConfirmPaswd.Size = new System.Drawing.Size(145, 26);
+            this.textBoxConfirmPaswd.TabIndex = 1;
+            this.textBoxConfirmPaswd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxEmail
+            // 
+            this.textBoxEmail.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.textBoxEmail.Location = new System.Drawing.Point(136, 131);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
+            this.textBoxEmail.Multiline = true;
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(145, 26);
+            this.textBoxEmail.TabIndex = 1;
+            this.textBoxEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(10, 99);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(119, 17);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Подтвердите пароль:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Noto Sans Cond", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(5, 273);
+            this.label3.Margin = new System.Windows.Forms.Padding(7, 12, 7, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(324, 15);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "На Ваш email было отправено письмо для подтверждения регистрации.";
+            this.label3.Visible = false;
+            // 
+            // textBoxPaswd
+            // 
+            this.textBoxPaswd.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.textBoxPaswd.Location = new System.Drawing.Point(136, 58);
+            this.textBoxPaswd.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
+            this.textBoxPaswd.Multiline = true;
+            this.textBoxPaswd.Name = "textBoxPaswd";
+            this.textBoxPaswd.Size = new System.Drawing.Size(145, 26);
+            this.textBoxPaswd.TabIndex = 1;
+            this.textBoxPaswd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -265,49 +277,14 @@
             this.gbmasterPased.BackColor = System.Drawing.Color.Transparent;
             this.gbmasterPased.Controls.Add(this.label8);
             this.gbmasterPased.Controls.Add(this.label7);
-            this.gbmasterPased.Controls.Add(this.textBox6);
-            this.gbmasterPased.Controls.Add(this.textBox5);
+            this.gbmasterPased.Controls.Add(this.textBoxAdminLog);
+            this.gbmasterPased.Controls.Add(this.textBoxAdminPaswd);
             this.gbmasterPased.Location = new System.Drawing.Point(418, 7);
             this.gbmasterPased.Name = "gbmasterPased";
             this.gbmasterPased.Size = new System.Drawing.Size(130, 230);
             this.gbmasterPased.TabIndex = 6;
             this.gbmasterPased.TabStop = false;
             this.gbmasterPased.Visible = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
-            this.label7.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(5, 21);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Login admin:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox6.Location = new System.Drawing.Point(5, 42);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(118, 26);
-            this.textBox6.TabIndex = 3;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox5.Location = new System.Drawing.Point(5, 97);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(118, 26);
-            this.textBox5.TabIndex = 2;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -322,16 +299,40 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Password admin:";
             // 
-            // groupBox2
+            // label7
             // 
-            this.groupBox2.Controls.Add(this.radioButton1);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(5, 171);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(391, 59);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(5, 21);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(72, 17);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "Login admin:";
+            // 
+            // textBoxAdminLog
+            // 
+            this.textBoxAdminLog.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.textBoxAdminLog.Location = new System.Drawing.Point(5, 42);
+            this.textBoxAdminLog.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
+            this.textBoxAdminLog.Multiline = true;
+            this.textBoxAdminLog.Name = "textBoxAdminLog";
+            this.textBoxAdminLog.Size = new System.Drawing.Size(118, 26);
+            this.textBoxAdminLog.TabIndex = 3;
+            this.textBoxAdminLog.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxAdminPaswd
+            // 
+            this.textBoxAdminPaswd.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.textBoxAdminPaswd.Location = new System.Drawing.Point(5, 97);
+            this.textBoxAdminPaswd.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
+            this.textBoxAdminPaswd.Multiline = true;
+            this.textBoxAdminPaswd.Name = "textBoxAdminPaswd";
+            this.textBoxAdminPaswd.Size = new System.Drawing.Size(118, 26);
+            this.textBoxAdminPaswd.TabIndex = 2;
+            this.textBoxAdminPaswd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // RegistrationForm
             // 
@@ -343,42 +344,43 @@
             this.ClientSize = new System.Drawing.Size(560, 311);
             this.Controls.Add(this.gbmasterPased);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonExit);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RegistrationForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "RegistrationForm";
+            this.Load += new System.EventHandler(this.RegistrationForm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.gbmasterPased.ResumeLayout(false);
-            this.gbmasterPased.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.gbmasterPased.ResumeLayout(false);
+            this.gbmasterPased.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBoxLogin;
+        private System.Windows.Forms.Button btnRegisterUser;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxConfirmPaswd;
+        private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxPaswd;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox gbmasterPased;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxAdminLog;
+        private System.Windows.Forms.TextBox textBoxAdminPaswd;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label8;
     }

@@ -7,9 +7,12 @@ namespace WindowsFormsApp1.Models
 {
     public class DataContex: DbContext
     {
-        public DataContex() : base() { }
+        public DataContex(DbContextOptions<DataContex> options) : base(options) { }
         public DbSet<Tenant> Tenants { get; set; }
 
-
+        public DataContex()
+        {
+            Database.EnsureCreated();
+        }
     }
 }
