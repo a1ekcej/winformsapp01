@@ -28,24 +28,7 @@ namespace WindowsFormsApp1
 
         private void RegistrationForm_Load(object sender, EventArgs e)
         {
-            // Путь к текущей БД
-            // Создание конфигурации подключения
-            var builder = new ConfigurationBuilder();
-            builder.SetBasePath(Directory.GetCurrentDirectory());
-            builder.AddJsonFile("appconfig.json;");
-            var config = builder.Build();
-
-            string connectionString = config.GetConnectionString("DefaultConnection");
-
-            var optionsBuilder = new DbContextOptionsBuilder<DataContex>();
-            var options = optionsBuilder
-                .UseSqlServer(connectionString)
-                .Options;
-
-            using (DataContex db = new DataContex(options))
-            {
-                
-            }
+           
         }
     }
 }
