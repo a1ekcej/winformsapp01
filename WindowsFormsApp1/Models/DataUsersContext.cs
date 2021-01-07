@@ -13,7 +13,6 @@ namespace WindowsFormsApp1.Models
         public DataUsersContext()
         {
             
-            Database.EnsureCreated();
         }
     }
 }

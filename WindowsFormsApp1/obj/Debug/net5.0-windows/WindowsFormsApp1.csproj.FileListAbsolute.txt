@@ -1,4 +1,5 @@
 D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\bin\Debug\net5.0-windows\WindowsFormsApp1.exe
+D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\bin\Debug\net5.0-windows\appsettings.json
 D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\bin\Debug\net5.0-windows\WindowsFormsApp1.deps.json
 D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\bin\Debug\net5.0-windows\WindowsFormsApp1.runtimeconfig.json
 D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\bin\Debug\net5.0-windows\WindowsFormsApp1.runtimeconfig.dev.json
@@ -72,5 +73,3 @@ D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp
 D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\obj\Debug\net5.0-windows\ref\WindowsFormsApp1.dll
 D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\obj\Debug\net5.0-windows\WindowsFormsApp1.pdb
 D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\obj\Debug\net5.0-windows\WindowsFormsApp1.genruntimeconfig.cache
-D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\obj\Debug\net5.0-windows\WindowsFormsApp1.csprojAssemblyReference.cache
-D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\bin\Debug\net5.0-windows\appsettings.json

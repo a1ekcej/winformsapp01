@@ -4,7 +4,6 @@ using System.Text;
 
 namespace WindowsFormsApp1.Models
 {
-   
     public class User
     {
         public int UserId { get; set; }
