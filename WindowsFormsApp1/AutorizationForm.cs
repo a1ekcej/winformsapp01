@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,11 +34,11 @@ namespace WindowsFormsApp1
 // Выполнение запроса на авторизацию
             UsersAutorisation db = new UsersAutorisation();
             DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter();
-            MySqlCommand command = new MySqlCommand("SELECT * FROM `users` WHERE `login` = @ul AND `paswd` = @up", db.GetConnection());
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            SqlCommand command = new SqlCommand("SELECT * FROM `users` WHERE `login` = @ul AND `paswd` = @up", db.GetConnection());
 
-            command.Parameters.Add("@ul", MySqlDbType.VarChar).Value = loginUser;
-            command.Parameters.Add("@up", MySqlDbType.VarChar).Value = paswdUser;
+            command.Parameters.Add("@ul", SqlDbType.VarChar).Value = loginUser;
+            command.Parameters.Add("@up", SqlDbType.VarChar).Value = paswdUser;
 
             adapter.SelectCommand = command;
             adapter.Fill(table);

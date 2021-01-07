@@ -28,7 +28,8 @@ namespace WindowsFormsApp1
 
         private void RegistrationForm_Load(object sender, EventArgs e)
         {
-           
+            DataUsersContext db = new DataUsersContext();
+
         }
     }
 }

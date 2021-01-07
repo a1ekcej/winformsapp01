@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,7 +8,7 @@ namespace WindowsFormsApp1
 {
     class UsersAutorisation
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;user=root;password=root;database=mydb");
+        SqlConnection connection = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=DBUsers;Integrated Security=True");
 
         public void OpenConnection () 
         {
@@ -29,7 +30,7 @@ namespace WindowsFormsApp1
                 connection.Close();
         }
 
-        public MySqlConnection GetConnection()
+        public SqlConnection GetConnection()
         {
             return connection;
         }
