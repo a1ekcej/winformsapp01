@@ -25,6 +25,8 @@ namespace WindowsFormsApp1
         private void exitApp_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            
+
         }
 
         

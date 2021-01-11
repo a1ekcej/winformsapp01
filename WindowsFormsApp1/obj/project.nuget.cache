@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DTuJPl9hlVR203tJgndYFWCSmp1AN23y9jwGhQKXEWVdeLIHMwlE5wfU/nK+NOTkxu1xd0Wi7j5DWzoBeawbww==",
+  "dgSpecHash": "SQjEkSgH3X+jl2ZzfTLqDocJ8HVo5jWvtmduQ08vWoXtUk4T+lsDTRP3emM5DFw1sWXjnqml+FHMeJxa7eT8+Q==",
   "success": true,
   "projectFilePath": "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ZaRt\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
     "C:\\Users\\ZaRt\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ZaRt\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\ZaRt\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -103,5 +104,16 @@
     "C:\\Users\\ZaRt\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\ZaRt\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"BCrypt.Net 0.1.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "BCrypt.Net",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

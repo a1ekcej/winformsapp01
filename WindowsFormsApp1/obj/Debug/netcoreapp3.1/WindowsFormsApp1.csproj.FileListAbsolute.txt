@@ -149,3 +149,5 @@ D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp
 D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.dll
 D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.pdb
 D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.genruntimeconfig.cache
+D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\bin\Debug\netcoreapp3.1\BCrypt.Net.dll
+D:\All_My_Applications\VisualStudio2019\C#\WinForms\MyWinFormApp\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csprojAssemblyReference.cache
