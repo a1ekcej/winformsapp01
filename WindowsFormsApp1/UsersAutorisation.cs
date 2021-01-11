@@ -4,8 +4,8 @@ using System;
 namespace WindowsFormsApp1
 {
     class UsersAutorisation
-    {
-        SqlConnection connection = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=DBUsers;Integrated Security=True");
+    {     
+        SqlConnection connection = new SqlConnection("Server=(localdb)\\MSSQLLocalDB;Database=DBUsers;Integrated Security=True;");
 
         public void OpenConnection () 
         {
