@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 using System.IO;
@@ -23,7 +20,7 @@ namespace WindowsFormsApp1.Models
             var config = builder.Build();
             string connectionString = config.GetConnectionString("DefaultConnection");
             
-            optionsBuilder.UseSqlServer(connectionString, opts => opts.CommandTimeout((int)TimeSpan.FromMinutes(10).TotalSeconds));
+            optionsBuilder.UseSqlServer(connectionString);
             return new DataUsersContext(optionsBuilder.Options);
         }
     }

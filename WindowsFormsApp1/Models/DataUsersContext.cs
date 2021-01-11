@@ -1,7 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace WindowsFormsApp1.Models
 {
@@ -10,9 +7,6 @@ namespace WindowsFormsApp1.Models
         public DbSet<User> Users { get; set; }
         public DataUsersContext(DbContextOptions<DataUsersContext> options) : base(options) { }
 
-        public DataUsersContext()
-        {
-            
-        }
+        public DataUsersContext() { }
     }
 }
