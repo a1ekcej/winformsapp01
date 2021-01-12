@@ -1,4 +1,5 @@
-﻿namespace WindowsFormsApp1.Models
+﻿
+namespace WindowsFormsApp1.Models
 {
     public class User
     {

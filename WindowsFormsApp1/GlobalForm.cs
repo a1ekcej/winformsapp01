@@ -19,14 +19,11 @@ namespace WindowsFormsApp1
         private void addUnit_Click(object sender, EventArgs e)
         {
             groupBox1.Visible = true;
-          
         }
 
         private void exitApp_Click(object sender, EventArgs e)
         {
             Application.Exit();
-            
-
         }
 
         

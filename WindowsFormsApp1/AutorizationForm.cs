@@ -39,12 +39,12 @@ namespace WindowsFormsApp1
             }
         }
 
-        private User loginUser (string loginUser, string paswdUser)
+        public User loginUser (string loginUser, string paswdUser)
         {
             var account = db.Users.SingleOrDefault(a => a.UserName.Equals(loginUser));
             if (account != null)
             {
-                if (paswdUser == account.UserPassword)
+                if (BCrypt.Net.BCrypt.Verify(paswdUser, account.UserPassword))
                 {
                     return account;
                 }
