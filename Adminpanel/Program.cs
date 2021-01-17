@@ -14,15 +14,17 @@ namespace Adminpanel
             Console.ForegroundColor = ConsoleColor.Black;
             Console.WriteLine("Консоль администратора");
             Console.ResetColor();
-
-            while (true)
+            bool qwerty = true;
+            while (qwerty)
             {
                 Console.WriteLine(" Если хотите добавить нового пользователя нажмите -1- ");
                 Console.WriteLine(" Если хотите удалить пользователя нажмите -2- ");
                 Console.WriteLine(" Выход -3- ");
+                Console.Write("Выбор операции: ");
                 string useranswer = Console.ReadLine();
                 switch (useranswer)
                 {
+                        // Добавить пользователя
                     case "1":
                         Console.Write("Введите логин пользователя: ");
                         string login = Console.ReadLine();
@@ -31,6 +33,7 @@ namespace Adminpanel
                         Console.WriteLine("Выберете права пользователя:");
                         Console.WriteLine("Нажмите -1- для роли администратор.");
                         Console.Write("Нажмите -2- для роли пользователя. Выбор роли: ");
+                        Console.WriteLine("Выберите роль: ");
                         string role = Console.ReadLine();
                         switch (role)
                         {
@@ -56,37 +59,35 @@ namespace Adminpanel
 
                             db.Add(user);
                             db.SaveChanges();
+                            Console.WriteLine($"Пользователь добавлен в базу данных!");
+                            Console.WriteLine("--------------------------------------------");
                         }
                         break;
-
+                        // Удалить пользователя
                     case "2":
                         Console.Write("Введите логин пользователя, которого нужно удалить: ");
                         string loginDELETE = Console.ReadLine();
-                        using (DataUsersContext db = new DataUsersContext())
+
+                        if (MessageBox.Show($"Вы действительно хотите удалить пользователя {loginDELETE}", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
-                            User user = db.Users.Where(u => u.UserName == loginDELETE);
-                            if(user != null)
+                            using (DataUsersContext db = new DataUsersContext())
                             {
+                                var user = db.Users.FirstOrDefault(u => u.UserName == loginDELETE);
                                 db.Users.Remove(user);
-                                db.Entry(user).State = EntityState.Deleted;
                                 db.SaveChanges();
-                            }
-                            else
-                            {
-                                MessageBox.Show("Ошибка. Такого пользователя не существует!!!");
+                                Console.WriteLine($"Пользователь {loginDELETE} удален!");
+                                Console.WriteLine("--------------------------------------------");
                             }
                         }
-                            break;
+                        break;
+                        // Выйти из консоли
+                    case "3":
+                        qwerty = false;
+                        break;
 
                     default:
+                        Console.WriteLine("Ошибка. попробуйте еще раз: ");
                         break;
-                }
-        
-                Console.WriteLine("Хотите добавить нового пользователя?: Да/Нет");
-                string answeruser = Console.ReadLine().ToLower();
-                if (answeruser == "нет")
-                {
-                    break;
                 }
             }
             

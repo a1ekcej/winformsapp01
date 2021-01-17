@@ -34,10 +34,7 @@
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.btnRegisterUser = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.rbAdmin = new System.Windows.Forms.RadioButton();
-            this.label5 = new System.Windows.Forms.Label();
+            this.checkBoxPaswd = new System.Windows.Forms.CheckBox();
             this.textBoxConfirmPaswd = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,18 +42,9 @@
             this.textBoxPaswd = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.gbmasterPased = new System.Windows.Forms.GroupBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBoxAdminPaswd = new System.Windows.Forms.TextBox();
-            this.textBoxAdminLog = new System.Windows.Forms.TextBox();
             this.btnEnter = new System.Windows.Forms.Button();
+            this.labelEquealPAswd = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.gbmasterPased.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonExit
@@ -80,7 +68,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(10, 20);
+            this.label1.Location = new System.Drawing.Point(10, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 17);
@@ -105,7 +93,7 @@
             this.btnRegisterUser.FlatAppearance.BorderSize = 3;
             this.btnRegisterUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegisterUser.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnRegisterUser.Location = new System.Drawing.Point(219, 240);
+            this.btnRegisterUser.Location = new System.Drawing.Point(219, 233);
             this.btnRegisterUser.Margin = new System.Windows.Forms.Padding(7, 6, 7, 60);
             this.btnRegisterUser.Name = "btnRegisterUser";
             this.btnRegisterUser.Size = new System.Drawing.Size(177, 30);
@@ -117,8 +105,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.labelEquealPAswd);
+            this.groupBox1.Controls.Add(this.checkBoxPaswd);
             this.groupBox1.Controls.Add(this.textBoxConfirmPaswd);
             this.groupBox1.Controls.Add(this.textBoxEmail);
             this.groupBox1.Controls.Add(this.label6);
@@ -130,7 +118,7 @@
             this.groupBox1.Controls.Add(this.btnRegisterUser);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(8, 7);
+            this.groupBox1.Location = new System.Drawing.Point(8, 11);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -138,59 +126,21 @@
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             // 
-            // checkBox1
+            // checkBoxPaswd
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.ForeColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Location = new System.Drawing.Point(160, 155);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(136, 19);
-            this.checkBox1.TabIndex = 9;
-            this.checkBox1.Text = "Посмотреть пароль";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.rbAdmin);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(5, 171);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(391, 59);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            // 
-            // rbAdmin
-            // 
-            this.rbAdmin.AutoSize = true;
-            this.rbAdmin.BackColor = System.Drawing.Color.White;
-            this.rbAdmin.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.rbAdmin.Location = new System.Drawing.Point(296, 20);
-            this.rbAdmin.Margin = new System.Windows.Forms.Padding(2);
-            this.rbAdmin.Name = "rbAdmin";
-            this.rbAdmin.Size = new System.Drawing.Size(56, 21);
-            this.rbAdmin.TabIndex = 5;
-            this.rbAdmin.TabStop = true;
-            this.rbAdmin.Text = "admin";
-            this.rbAdmin.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Noto Sans Cond", 9F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(9, 22);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(247, 17);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Выберите назначение профиля пользователя:";
+            this.checkBoxPaswd.AutoSize = true;
+            this.checkBoxPaswd.ForeColor = System.Drawing.Color.Transparent;
+            this.checkBoxPaswd.Location = new System.Drawing.Point(151, 143);
+            this.checkBoxPaswd.Name = "checkBoxPaswd";
+            this.checkBoxPaswd.Size = new System.Drawing.Size(136, 19);
+            this.checkBoxPaswd.TabIndex = 9;
+            this.checkBoxPaswd.Text = "Посмотреть пароль";
+            this.checkBoxPaswd.UseVisualStyleBackColor = true;
             // 
             // textBoxConfirmPaswd
             // 
             this.textBoxConfirmPaswd.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBoxConfirmPaswd.Location = new System.Drawing.Point(151, 87);
+            this.textBoxConfirmPaswd.Location = new System.Drawing.Point(151, 114);
             this.textBoxConfirmPaswd.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxConfirmPaswd.Multiline = true;
             this.textBoxConfirmPaswd.Name = "textBoxConfirmPaswd";
@@ -201,8 +151,8 @@
             // textBoxEmail
             // 
             this.textBoxEmail.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBoxEmail.Location = new System.Drawing.Point(151, 124);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
+            this.textBoxEmail.Location = new System.Drawing.Point(151, 191);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(0);
             this.textBoxEmail.Multiline = true;
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(145, 26);
@@ -215,7 +165,7 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(10, 92);
+            this.label6.Location = new System.Drawing.Point(10, 119);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(119, 17);
@@ -239,7 +189,7 @@
             // textBoxPaswd
             // 
             this.textBoxPaswd.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBoxPaswd.Location = new System.Drawing.Point(151, 51);
+            this.textBoxPaswd.Location = new System.Drawing.Point(151, 64);
             this.textBoxPaswd.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
             this.textBoxPaswd.Multiline = true;
             this.textBoxPaswd.Name = "textBoxPaswd";
@@ -253,7 +203,7 @@
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(10, 129);
+            this.label4.Location = new System.Drawing.Point(10, 197);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(109, 17);
@@ -266,99 +216,12 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(10, 57);
+            this.label2.Location = new System.Drawing.Point(10, 69);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Придумайте пароль:";
-            // 
-            // gbmasterPased
-            // 
-            this.gbmasterPased.BackColor = System.Drawing.Color.Transparent;
-            this.gbmasterPased.Controls.Add(this.panel1);
-            this.gbmasterPased.Location = new System.Drawing.Point(418, 7);
-            this.gbmasterPased.Name = "gbmasterPased";
-            this.gbmasterPased.Size = new System.Drawing.Size(130, 230);
-            this.gbmasterPased.TabIndex = 6;
-            this.gbmasterPased.TabStop = false;
-            this.gbmasterPased.Visible = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Firebrick;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBoxAdminPaswd);
-            this.panel1.Controls.Add(this.textBoxAdminLog);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Font = new System.Drawing.Font("Noto Sans Cond", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.panel1.Location = new System.Drawing.Point(3, 19);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(124, 208);
-            this.panel1.TabIndex = 8;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.DimGray;
-            this.label8.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(1, 140);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 17);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Password admin:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Noto Sans Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(2, 4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(118, 74);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Пожалуйста, введите логин и пароль администратора";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.DimGray;
-            this.label7.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(1, 85);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(72, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Login admin:";
-            // 
-            // textBoxAdminPaswd
-            // 
-            this.textBoxAdminPaswd.BackColor = System.Drawing.Color.DimGray;
-            this.textBoxAdminPaswd.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBoxAdminPaswd.Location = new System.Drawing.Point(1, 161);
-            this.textBoxAdminPaswd.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
-            this.textBoxAdminPaswd.Multiline = true;
-            this.textBoxAdminPaswd.Name = "textBoxAdminPaswd";
-            this.textBoxAdminPaswd.Size = new System.Drawing.Size(118, 26);
-            this.textBoxAdminPaswd.TabIndex = 2;
-            this.textBoxAdminPaswd.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBoxAdminLog
-            // 
-            this.textBoxAdminLog.BackColor = System.Drawing.Color.DimGray;
-            this.textBoxAdminLog.Font = new System.Drawing.Font("Noto Serif Cond", 16F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.textBoxAdminLog.Location = new System.Drawing.Point(1, 106);
-            this.textBoxAdminLog.Margin = new System.Windows.Forms.Padding(2, 25, 2, 25);
-            this.textBoxAdminLog.Multiline = true;
-            this.textBoxAdminLog.Name = "textBoxAdminLog";
-            this.textBoxAdminLog.Size = new System.Drawing.Size(118, 26);
-            this.textBoxAdminLog.TabIndex = 3;
-            this.textBoxAdminLog.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnEnter
             // 
@@ -375,6 +238,18 @@
             this.btnEnter.UseVisualStyleBackColor = false;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
             // 
+            // labelEquealPAswd
+            // 
+            this.labelEquealPAswd.AutoSize = true;
+            this.labelEquealPAswd.Font = new System.Drawing.Font("Noto Sans Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelEquealPAswd.ForeColor = System.Drawing.Color.Firebrick;
+            this.labelEquealPAswd.Location = new System.Drawing.Point(151, 165);
+            this.labelEquealPAswd.Name = "labelEquealPAswd";
+            this.labelEquealPAswd.Size = new System.Drawing.Size(131, 17);
+            this.labelEquealPAswd.TabIndex = 10;
+            this.labelEquealPAswd.Text = "* пароли не совпадают ";
+            this.labelEquealPAswd.Visible = false;
+            // 
             // RegistrationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -384,7 +259,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(560, 311);
             this.Controls.Add(this.btnEnter);
-            this.Controls.Add(this.gbmasterPased);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonExit);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -393,11 +267,6 @@
             this.Text = "RegistrationForm";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.gbmasterPased.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -413,20 +282,12 @@
         private System.Windows.Forms.TextBox textBoxEmail;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton rbAdmin;
         private System.Windows.Forms.TextBox textBoxPaswd;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox gbmasterPased;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBoxAdminLog;
-        private System.Windows.Forms.TextBox textBoxAdminPaswd;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox checkBoxPaswd;
         private System.Windows.Forms.Button btnEnter;
+        private System.Windows.Forms.Label labelEquel;
+        private System.Windows.Forms.Label labelEquealPAswd;
     }
 }
