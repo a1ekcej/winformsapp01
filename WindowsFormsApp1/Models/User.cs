@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 namespace WindowsFormsApp1.Models
 {
     public class User
@@ -7,5 +9,11 @@ namespace WindowsFormsApp1.Models
         public string UserName { get; set; }
         public string UserPassword { get; set; }
         public string UserRight { get; set; }
+        public ICollection<Tenant> Tenants { get; set; }
+        public User()
+        {
+            Tenants = new List<Tenant>();
+        }
+
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace WindowsFormsApp1.Models
 {
@@ -18,5 +19,7 @@ namespace WindowsFormsApp1.Models
         public int Number_passport { get; set; }
         public string City { get; set; }
         public string Address { get; set; }
+        public int UserId { get; set; }
+        public User User { get; set; }
     }
 }

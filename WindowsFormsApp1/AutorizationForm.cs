@@ -36,6 +36,8 @@ namespace WindowsFormsApp1
                 this.Hide();
                 GlobalForm global = new GlobalForm();
                 global.Show();
+
+                global.LoginTXT(account.UserName, account.UserRight);
             }
         }
 

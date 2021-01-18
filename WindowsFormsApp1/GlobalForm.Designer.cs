@@ -76,14 +76,14 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.TXTloginUser = new System.Windows.Forms.Label();
             this.textFIO = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.textBoxLogin = new System.Windows.Forms.TextBox();
+            this.textBoxRole = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -613,9 +613,9 @@
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox8.Controls.Add(this.label15);
+            this.groupBox8.Controls.Add(this.textBoxRole);
+            this.groupBox8.Controls.Add(this.textBoxLogin);
             this.groupBox8.Controls.Add(this.label19);
-            this.groupBox8.Controls.Add(this.TXTloginUser);
             this.groupBox8.Controls.Add(this.textFIO);
             this.groupBox8.Controls.Add(this.label18);
             this.groupBox8.Controls.Add(this.label17);
@@ -631,16 +631,6 @@
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
             // 
-            // label15
-            // 
-            this.label15.BackColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(75, 85);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(130, 16);
-            this.label15.TabIndex = 10;
-            this.label15.Text = "users";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // label19
             // 
             this.label19.BackColor = System.Drawing.Color.White;
@@ -649,18 +639,8 @@
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(60, 16);
             this.label19.TabIndex = 9;
-            this.label19.Text = "login:";
+            this.label19.Text = "role:";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // TXTloginUser
-            // 
-            this.TXTloginUser.BackColor = System.Drawing.Color.White;
-            this.TXTloginUser.Location = new System.Drawing.Point(75, 45);
-            this.TXTloginUser.Name = "TXTloginUser";
-            this.TXTloginUser.Size = new System.Drawing.Size(130, 16);
-            this.TXTloginUser.TabIndex = 8;
-            this.TXTloginUser.Text = "users";
-            this.TXTloginUser.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // textFIO
             // 
@@ -696,7 +676,7 @@
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(60, 16);
             this.label16.TabIndex = 5;
-            this.label16.Text = "ФИО:";
+            this.label16.Text = "login:";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label14
@@ -709,6 +689,24 @@
             this.label14.Size = new System.Drawing.Size(83, 15);
             this.label14.TabIndex = 5;
             this.label14.Text = "Вы вошли как:";
+            // 
+            // textBoxLogin
+            // 
+            this.textBoxLogin.Location = new System.Drawing.Point(72, 41);
+            this.textBoxLogin.Name = "textBoxLogin";
+            this.textBoxLogin.PlaceholderText = "login";
+            this.textBoxLogin.Size = new System.Drawing.Size(130, 23);
+            this.textBoxLogin.TabIndex = 10;
+            this.textBoxLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxRole
+            // 
+            this.textBoxRole.Location = new System.Drawing.Point(72, 81);
+            this.textBoxRole.Name = "textBoxRole";
+            this.textBoxRole.PlaceholderText = "role";
+            this.textBoxRole.Size = new System.Drawing.Size(130, 23);
+            this.textBoxRole.TabIndex = 11;
+            this.textBoxRole.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // GlobalForm
             // 
@@ -799,10 +797,10 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label textFIO;
-        private System.Windows.Forms.Label TXTloginUser;
         private System.Windows.Forms.ColumnHeader column_Status;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox textBoxRole;
+        private System.Windows.Forms.TextBox textBoxLogin;
     }
 }
 

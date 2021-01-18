@@ -5,15 +5,18 @@ namespace WindowsFormsApp1
 {
     public partial class GlobalForm : Form
     {
-        public string LoginTXT
+        public void LoginTXT(string log, string role)
         {
-            get { return TXTloginUser.Text; }
-            set { TXTloginUser.Text = value; }
+            textBoxLogin.Text = log;
+            textBoxRole.Text = role;
         }
         public GlobalForm()
         {
             AutorizationForm autof = new AutorizationForm();
             InitializeComponent();
+        //    UserControl user = new UserControl();
+        //    user
+
         }
 
         private void addUnit_Click(object sender, EventArgs e)
