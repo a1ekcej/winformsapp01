@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GlobalForm));
             this.addUnit = new System.Windows.Forms.Button();
             this.remoteUnit = new System.Windows.Forms.Button();
-            this.saveDB = new System.Windows.Forms.Button();
             this.exitApp = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -40,7 +39,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -76,14 +74,16 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textBoxRole = new System.Windows.Forms.TextBox();
+            this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.textFIO = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBoxLogin = new System.Windows.Forms.TextBox();
-            this.textBoxRole = new System.Windows.Forms.TextBox();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -96,59 +96,51 @@
             // 
             // addUnit
             // 
+            this.addUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.addUnit.BackColor = System.Drawing.Color.SkyBlue;
             this.addUnit.FlatAppearance.BorderSize = 3;
             this.addUnit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.addUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addUnit.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.addUnit.Location = new System.Drawing.Point(28, 35);
+            this.addUnit.Location = new System.Drawing.Point(8, 18);
             this.addUnit.Name = "addUnit";
             this.addUnit.Size = new System.Drawing.Size(156, 30);
             this.addUnit.TabIndex = 0;
-            this.addUnit.Text = "Новые данные";
+            this.addUnit.Text = "Добавить";
+            this.addUnit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.addUnit.UseVisualStyleBackColor = false;
             this.addUnit.Click += new System.EventHandler(this.addUnit_Click);
             // 
             // remoteUnit
             // 
+            this.remoteUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.remoteUnit.BackColor = System.Drawing.Color.SkyBlue;
             this.remoteUnit.FlatAppearance.BorderSize = 3;
             this.remoteUnit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.remoteUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.remoteUnit.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.remoteUnit.Location = new System.Drawing.Point(28, 71);
+            this.remoteUnit.Location = new System.Drawing.Point(8, 54);
             this.remoteUnit.Name = "remoteUnit";
             this.remoteUnit.Size = new System.Drawing.Size(156, 30);
             this.remoteUnit.TabIndex = 1;
             this.remoteUnit.Text = "Удалить";
+            this.remoteUnit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.remoteUnit.UseVisualStyleBackColor = false;
-            // 
-            // saveDB
-            // 
-            this.saveDB.BackColor = System.Drawing.Color.SkyBlue;
-            this.saveDB.FlatAppearance.BorderSize = 3;
-            this.saveDB.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.saveDB.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveDB.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.saveDB.Location = new System.Drawing.Point(28, 107);
-            this.saveDB.Name = "saveDB";
-            this.saveDB.Size = new System.Drawing.Size(156, 30);
-            this.saveDB.TabIndex = 2;
-            this.saveDB.Text = "Сохранить";
-            this.saveDB.UseVisualStyleBackColor = false;
             // 
             // exitApp
             // 
+            this.exitApp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.exitApp.BackColor = System.Drawing.Color.SkyBlue;
             this.exitApp.FlatAppearance.BorderSize = 3;
             this.exitApp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.exitApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exitApp.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.exitApp.Location = new System.Drawing.Point(28, 143);
+            this.exitApp.Location = new System.Drawing.Point(8, 90);
             this.exitApp.Name = "exitApp";
             this.exitApp.Size = new System.Drawing.Size(156, 30);
             this.exitApp.TabIndex = 2;
             this.exitApp.Text = "Выход";
+            this.exitApp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.exitApp.UseVisualStyleBackColor = false;
             this.exitApp.Click += new System.EventHandler(this.exitApp_Click);
             // 
@@ -220,13 +212,6 @@
             this.textBox5.TabIndex = 4;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // progressBar1
-            // 
-            this.progressBar1.Location = new System.Drawing.Point(4, 272);
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(617, 23);
-            this.progressBar1.TabIndex = 6;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -263,8 +248,9 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.textBox14);
+            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.groupBox4);
-            this.groupBox1.Controls.Add(this.progressBar1);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.groupBox2);
@@ -597,16 +583,17 @@
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.groupBox7.Controls.Add(this.exitApp);
             this.groupBox7.Controls.Add(this.addUnit);
             this.groupBox7.Controls.Add(this.remoteUnit);
-            this.groupBox7.Controls.Add(this.saveDB);
+            this.groupBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox7.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.groupBox7.Location = new System.Drawing.Point(655, 376);
+            this.groupBox7.Location = new System.Drawing.Point(686, 446);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox7.Size = new System.Drawing.Size(210, 196);
+            this.groupBox7.Size = new System.Drawing.Size(171, 128);
             this.groupBox7.TabIndex = 11;
             this.groupBox7.TabStop = false;
             // 
@@ -630,6 +617,24 @@
             this.groupBox8.Size = new System.Drawing.Size(210, 137);
             this.groupBox8.TabIndex = 12;
             this.groupBox8.TabStop = false;
+            // 
+            // textBoxRole
+            // 
+            this.textBoxRole.Location = new System.Drawing.Point(72, 81);
+            this.textBoxRole.Name = "textBoxRole";
+            this.textBoxRole.PlaceholderText = "role";
+            this.textBoxRole.Size = new System.Drawing.Size(130, 23);
+            this.textBoxRole.TabIndex = 11;
+            this.textBoxRole.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // textBoxLogin
+            // 
+            this.textBoxLogin.Location = new System.Drawing.Point(72, 41);
+            this.textBoxLogin.Name = "textBoxLogin";
+            this.textBoxLogin.PlaceholderText = "login";
+            this.textBoxLogin.Size = new System.Drawing.Size(130, 23);
+            this.textBoxLogin.TabIndex = 10;
+            this.textBoxLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label19
             // 
@@ -690,23 +695,25 @@
             this.label14.TabIndex = 5;
             this.label14.Text = "Вы вошли как:";
             // 
-            // textBoxLogin
+            // textBox14
             // 
-            this.textBoxLogin.Location = new System.Drawing.Point(72, 41);
-            this.textBoxLogin.Name = "textBoxLogin";
-            this.textBoxLogin.PlaceholderText = "login";
-            this.textBoxLogin.Size = new System.Drawing.Size(130, 23);
-            this.textBoxLogin.TabIndex = 10;
-            this.textBoxLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox14.Location = new System.Drawing.Point(69, 272);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.PlaceholderText = "объект аренды";
+            this.textBox14.Size = new System.Drawing.Size(552, 23);
+            this.textBox14.TabIndex = 8;
+            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBoxRole
+            // label15
             // 
-            this.textBoxRole.Location = new System.Drawing.Point(72, 81);
-            this.textBoxRole.Name = "textBoxRole";
-            this.textBoxRole.PlaceholderText = "role";
-            this.textBoxRole.Size = new System.Drawing.Size(130, 23);
-            this.textBoxRole.TabIndex = 11;
-            this.textBoxRole.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.Color.White;
+            this.label15.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(12, 276);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(51, 17);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "Объект:";
             // 
             // GlobalForm
             // 
@@ -747,7 +754,6 @@
 
         private System.Windows.Forms.Button addUnit;
         private System.Windows.Forms.Button remoteUnit;
-        private System.Windows.Forms.Button saveDB;
         private System.Windows.Forms.Button exitApp;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
@@ -756,7 +762,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -801,6 +806,8 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBoxRole;
         private System.Windows.Forms.TextBox textBoxLogin;
+        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.Label label15;
     }
 }
 
