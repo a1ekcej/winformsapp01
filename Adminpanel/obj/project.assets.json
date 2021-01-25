@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "BCrypt.Net/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/BCrypt.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net35/BCrypt.Net.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.2.8": {
         "type": "package",
         "dependencies": {
@@ -156,8 +165,7 @@
           "ref/netcoreapp2.2/netstandard.dll": {}
         },
         "build": {
-          "build/netcoreapp2.2/Microsoft.NETCore.App.props": {},
-          "build/netcoreapp2.2/Microsoft.NETCore.App.targets": {}
+          "build/netcoreapp2.2/_._": {}
         }
       },
       "Microsoft.NETCore.DotNetAppHost/2.2.8": {
@@ -205,12 +213,41 @@
           "lib/netstandard1.0/_._": {}
         },
         "build": {
-          "build/netstandard2.0/NETStandard.Library.targets": {}
+          "build/netstandard2.0/_._": {}
         }
+      },
+      "WindowsFormsApp1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.NETCore.App": "2.2.8"
+        },
+        "compile": {
+          "bin/placeholder/WindowsFormsApp1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WindowsFormsApp1.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WindowsForms"
+        ]
       }
     }
   },
   "libraries": {
+    "BCrypt.Net/0.1.0": {
+      "sha512": "sST2w361Dxt9GGMfpOTiK50wXGV64Ybb1hiX3xjEWnhVYZNF43NuySGwADJa7X1R+bA53NsFR+tuDxcYiJeIOA==",
+      "type": "package",
+      "path": "bcrypt.net/0.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net.0.1.0.nupkg.sha512",
+        "bcrypt.net.nuspec",
+        "lib/net35/BCrypt.Net.XML",
+        "lib/net35/BCrypt.Net.dll"
+      ]
+    },
     "Microsoft.NETCore.App/2.2.8": {
       "sha512": "GOxlvyc8hFrnhDjYlm25JJ7PwoyeoOpZzcg6ZgF8n8l6VxezNupRkkTeA2ek1WsspN0CdAoA8e7iDVNU84/F+Q==",
       "type": "package",
@@ -680,11 +717,17 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "WindowsFormsApp1/1.0.0": {
+      "type": "project",
+      "path": "../WindowsFormsApp1/WindowsFormsApp1.csproj",
+      "msbuildProject": "../WindowsFormsApp1/WindowsFormsApp1.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Microsoft.NETCore.App >= 2.2.8"
+      "BCrypt.Net >= 0.1.0",
+      "WindowsFormsApp1 >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -693,11 +736,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
-      "projectName": "WindowsFormsApp1",
-      "projectPath": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+      "projectUniqueName": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\Adminpanel\\Adminpanel.csproj",
+      "projectName": "Adminpanel",
+      "projectPath": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\Adminpanel\\Adminpanel.csproj",
       "packagesPath": "C:\\Users\\a1ex\\.nuget\\packages\\",
-      "outputPath": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\obj\\",
+      "outputPath": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\Adminpanel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\a1ex\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -713,7 +756,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
+              "projectPath": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -726,9 +773,9 @@
       "netcoreapp3.1": {
         "targetAlias": "netcoreapp3.1",
         "dependencies": {
-          "Microsoft.NETCore.App": {
+          "BCrypt.Net": {
             "target": "Package",
-            "version": "[2.2.8, )"
+            "version": "[0.1.0, )"
           }
         },
         "imports": [
@@ -752,5 +799,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"BCrypt.Net 0.1.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "BCrypt.Net",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

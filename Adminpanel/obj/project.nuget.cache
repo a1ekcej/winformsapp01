@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "dgSpecHash": "2dOr9jiQl1CaPqSwVcZtl7brX2fAGYs0fUnHAG7T/WbV/5kVpygyeKIGCtgBrQdG+1F2VFn1wlGYPlPijFNOAw==",
+  "success": true,
+  "projectFilePath": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\Adminpanel\\Adminpanel.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\a1ex\\.nuget\\packages\\bcrypt.net\\0.1.0\\bcrypt.net.0.1.0.nupkg.sha512",
+    "C:\\Users\\a1ex\\.nuget\\packages\\microsoft.netcore.app\\2.2.8\\microsoft.netcore.app.2.2.8.nupkg.sha512",
+    "C:\\Users\\a1ex\\.nuget\\packages\\microsoft.netcore.dotnetapphost\\2.2.8\\microsoft.netcore.dotnetapphost.2.2.8.nupkg.sha512",
+    "C:\\Users\\a1ex\\.nuget\\packages\\microsoft.netcore.dotnethostpolicy\\2.2.8\\microsoft.netcore.dotnethostpolicy.2.2.8.nupkg.sha512",
+    "C:\\Users\\a1ex\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.2.8\\microsoft.netcore.dotnethostresolver.2.2.8.nupkg.sha512",
+    "C:\\Users\\a1ex\\.nuget\\packages\\microsoft.netcore.platforms\\2.2.4\\microsoft.netcore.platforms.2.2.4.nupkg.sha512",
+    "C:\\Users\\a1ex\\.nuget\\packages\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "C:\\Users\\a1ex\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Пакет \"BCrypt.Net 0.1.0\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "libraryId": "BCrypt.Net",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
+}
