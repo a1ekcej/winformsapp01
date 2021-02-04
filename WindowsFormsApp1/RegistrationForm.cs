@@ -9,7 +9,7 @@ namespace WindowsFormsApp1
 
     public partial class RegistrationForm : Form
     {
-        DataUsersContext usr = new DataUsersContext(); 
+        DataContext usr = new DataContext(); 
         
         public RegistrationForm()
         {
@@ -23,7 +23,7 @@ namespace WindowsFormsApp1
 
         private void btnRegisterUser_Click(object sender, EventArgs e)
         {
-            DataUsersContext db = new DataUsersContext();
+            DataContext db = new DataContext();
 
             if (textBoxConfirmPaswd.Text != textBoxPaswd.Text)
             {

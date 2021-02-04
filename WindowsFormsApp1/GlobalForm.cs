@@ -1,29 +1,64 @@
 ﻿using System;
 using System.Windows.Forms;
+using WindowsFormsApp1.Models;
 
 namespace WindowsFormsApp1
 {
     public partial class GlobalForm : Form
     {
-        public void LoginTXT(string log, string role)
+        public void LoginTXT(string log, string role, int id)
         {
             textBoxLogin.Text = log;
             textBoxRole.Text = role;
+            obj.UserId = id;
         }
+
+        
+
+        ArendaObject obj = new ArendaObject();
+         
+
         public GlobalForm()
         {
             AutorizationForm autof = new AutorizationForm();
             InitializeComponent();
-        //    UserControl user = new UserControl();
-        //    user
-
         }
 
         private void addUnit_Click(object sender, EventArgs e)
         {
-            groupBox1.Visible = true;
-            addUnit.Text = "Сохранить";
+            // Сохранить новый объект аренды в DB
+            obj.City = textBoxCity.Text.Trim();
+            obj.Street = textBoxStreet.Text.Trim();
+            obj.HouseNumber = Convert.ToInt32(textBoxHouseNum.Text.Trim());
+            obj.ApartmentNumber = Convert.ToInt32(textBoxApartamentNum.Text);
+            obj.HouseArea = Convert.ToDouble(textBoxArea.Text);
+            obj.NumberRoom = Convert.ToInt32(textBoxRoomNum.Text);
+            obj.Floor = Convert.ToInt32(textBoxFloor.Text);
+            obj.Owner = textBoxOwner.Text.Trim();
+            obj.ObjectName = "г." + obj.City + " ул." + obj.Street + " д." + obj.HouseNumber + " кв." + obj.ApartmentNumber;
+            
+            
+            using(DataContext db = new DataContext())
+            {
+                db.ArendaObjects.Add(obj);
+                db.SaveChanges();
+                ClearTabControl(TextBox);
+            }
+        }
 
+        public static void ClearTabControl(Control control)
+        {
+
+            foreach (Control c in control.Controls)
+            {
+                if (c.GetType() == typeof(TextBox))
+                    c.Text = string.Empty;
+
+                if (c.GetType() == typeof(GroupBox))
+                {
+                    if (c.Name != "gbLog_In") ClearTabControl(c);
+                }
+            }
         }
 
         private void exitApp_Click(object sender, EventArgs e)
@@ -31,6 +66,17 @@ namespace WindowsFormsApp1
             Application.Exit();
         }
 
-        
+        private void GlobalForm_Load(object sender, EventArgs e)
+        {
+            tabControl.Visible = true;
+            addObject.Text = "Сохранить";
+
+            Tenant tenant = new Tenant();
+        }
+
+        private void addTenant_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

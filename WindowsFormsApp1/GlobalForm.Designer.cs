@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GlobalForm));
-            this.addUnit = new System.Windows.Forms.Button();
+            this.addObject = new System.Windows.Forms.Button();
             this.remoteUnit = new System.Windows.Forms.Button();
             this.exitApp = new System.Windows.Forms.Button();
             this.listViewElemDB = new System.Windows.Forms.ListView();
@@ -41,9 +41,10 @@
             this.column_telnumb2 = new System.Windows.Forms.ColumnHeader();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBoxObjects = new System.Windows.Forms.ComboBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.addTenant = new System.Windows.Forms.Button();
+            this.gbLog_In = new System.Windows.Forms.GroupBox();
             this.textBoxRole = new System.Windows.Forms.TextBox();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -52,10 +53,27 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.gbObjectsothersValues = new System.Windows.Forms.GroupBox();
+            this.textBoxOwner = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.textBoxFloor = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBoxRoomNum = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBoxArea = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.gbObjectsValue = new System.Windows.Forms.GroupBox();
+            this.textBoxApartamentNum = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBoxHouseNum = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.textBoxStreet = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBoxCity = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
@@ -88,55 +106,37 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
             this.groupBox5.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.gbLog_In.SuspendLayout();
+            this.tabControl.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.gbObjectsothersValues.SuspendLayout();
+            this.gbObjectsValue.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.groupBox9.SuspendLayout();
-            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
-            // addUnit
+            // addObject
             // 
-            this.addUnit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.addUnit.BackColor = System.Drawing.Color.SkyBlue;
-            this.addUnit.FlatAppearance.BorderSize = 3;
-            this.addUnit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.addUnit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addUnit.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.addUnit.Location = new System.Drawing.Point(7, 43);
-            this.addUnit.Name = "addUnit";
-            this.addUnit.Size = new System.Drawing.Size(204, 30);
-            this.addUnit.TabIndex = 0;
-            this.addUnit.Text = "Добавить";
-            this.addUnit.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.addUnit.UseVisualStyleBackColor = false;
-            this.addUnit.Click += new System.EventHandler(this.addUnit_Click);
+            this.addObject.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addObject.BackColor = System.Drawing.Color.SkyBlue;
+            this.addObject.FlatAppearance.BorderSize = 3;
+            this.addObject.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.addObject.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addObject.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.addObject.Location = new System.Drawing.Point(7, 43);
+            this.addObject.Name = "addObject";
+            this.addObject.Size = new System.Drawing.Size(204, 30);
+            this.addObject.TabIndex = 0;
+            this.addObject.Text = "Добавить объект";
+            this.addObject.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.addObject.UseVisualStyleBackColor = false;
+            this.addObject.Click += new System.EventHandler(this.addUnit_Click);
             // 
             // remoteUnit
             // 
@@ -234,7 +234,7 @@
             // 
             this.groupBox5.BackColor = System.Drawing.Color.Transparent;
             this.groupBox5.Controls.Add(this.label12);
-            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.comboBoxObjects);
             this.groupBox5.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.groupBox5.Location = new System.Drawing.Point(12, 5);
             this.groupBox5.Name = "groupBox5";
@@ -252,26 +252,26 @@
             this.label12.TabIndex = 1;
             this.label12.Text = "Выберите объект:";
             // 
-            // comboBox1
+            // comboBoxObjects
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.comboBoxObjects.FormattingEnabled = true;
+            this.comboBoxObjects.Items.AddRange(new object[] {
             "г. Воронеж, Владимира Невского 19",
             "г. Воронеж, 60 Армии 29А",
             "г. Воронеж, Курчатова 36А",
             "г. Воронеж, Олимпийский 11"});
-            this.comboBox1.Location = new System.Drawing.Point(150, 11);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(502, 24);
-            this.comboBox1.TabIndex = 0;
+            this.comboBoxObjects.Location = new System.Drawing.Point(150, 11);
+            this.comboBoxObjects.Name = "comboBoxObjects";
+            this.comboBoxObjects.Size = new System.Drawing.Size(502, 24);
+            this.comboBoxObjects.TabIndex = 0;
             // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.Transparent;
             this.groupBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.groupBox7.Controls.Add(this.button1);
+            this.groupBox7.Controls.Add(this.addTenant);
             this.groupBox7.Controls.Add(this.exitApp);
-            this.groupBox7.Controls.Add(this.addUnit);
+            this.groupBox7.Controls.Add(this.addObject);
             this.groupBox7.Controls.Add(this.remoteUnit);
             this.groupBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox7.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
@@ -283,26 +283,44 @@
             this.groupBox7.TabIndex = 11;
             this.groupBox7.TabStop = false;
             // 
-            // groupBox8
+            // addTenant
             // 
-            this.groupBox8.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox8.Controls.Add(this.textBoxRole);
-            this.groupBox8.Controls.Add(this.textBoxLogin);
-            this.groupBox8.Controls.Add(this.label19);
-            this.groupBox8.Controls.Add(this.textFIO);
-            this.groupBox8.Controls.Add(this.label18);
-            this.groupBox8.Controls.Add(this.label17);
-            this.groupBox8.Controls.Add(this.label16);
-            this.groupBox8.Controls.Add(this.label14);
-            this.groupBox8.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.groupBox8.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.groupBox8.Location = new System.Drawing.Point(703, 33);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox8.Size = new System.Drawing.Size(218, 137);
-            this.groupBox8.TabIndex = 12;
-            this.groupBox8.TabStop = false;
+            this.addTenant.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.addTenant.BackColor = System.Drawing.Color.SkyBlue;
+            this.addTenant.FlatAppearance.BorderSize = 3;
+            this.addTenant.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.addTenant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addTenant.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.addTenant.Location = new System.Drawing.Point(7, 87);
+            this.addTenant.Name = "addTenant";
+            this.addTenant.Size = new System.Drawing.Size(204, 30);
+            this.addTenant.TabIndex = 3;
+            this.addTenant.Text = "Добавить жильца";
+            this.addTenant.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.addTenant.UseVisualStyleBackColor = false;
+            this.addTenant.Click += new System.EventHandler(this.addTenant_Click);
+            // 
+            // gbLog_In
+            // 
+            this.gbLog_In.BackColor = System.Drawing.Color.Transparent;
+            this.gbLog_In.Controls.Add(this.textBoxRole);
+            this.gbLog_In.Controls.Add(this.textBoxLogin);
+            this.gbLog_In.Controls.Add(this.label19);
+            this.gbLog_In.Controls.Add(this.textFIO);
+            this.gbLog_In.Controls.Add(this.label18);
+            this.gbLog_In.Controls.Add(this.label17);
+            this.gbLog_In.Controls.Add(this.label16);
+            this.gbLog_In.Controls.Add(this.label14);
+            this.gbLog_In.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.gbLog_In.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.gbLog_In.ForeColor = System.Drawing.SystemColors.Desktop;
+            this.gbLog_In.Location = new System.Drawing.Point(703, 33);
+            this.gbLog_In.Margin = new System.Windows.Forms.Padding(2);
+            this.gbLog_In.Name = "gbLog_In";
+            this.gbLog_In.Padding = new System.Windows.Forms.Padding(2);
+            this.gbLog_In.Size = new System.Drawing.Size(218, 137);
+            this.gbLog_In.TabIndex = 12;
+            this.gbLog_In.TabStop = false;
             // 
             // textBoxRole
             // 
@@ -381,20 +399,21 @@
             this.label14.TabIndex = 5;
             this.label14.Text = "Вы вошли как:";
             // 
-            // tabControl1
+            // tabControl
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 52);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(657, 330);
-            this.tabControl1.TabIndex = 14;
+            this.tabControl.Controls.Add(this.tabPage1);
+            this.tabControl.Controls.Add(this.tabPage2);
+            this.tabControl.Location = new System.Drawing.Point(12, 52);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(657, 330);
+            this.tabControl.TabIndex = 14;
+            this.tabControl.Visible = false;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.groupBox10);
-            this.tabPage1.Controls.Add(this.groupBox9);
+            this.tabPage1.Controls.Add(this.gbObjectsothersValues);
+            this.tabPage1.Controls.Add(this.gbObjectsValue);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -402,6 +421,195 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Объекты";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // gbObjectsothersValues
+            // 
+            this.gbObjectsothersValues.BackColor = System.Drawing.Color.Silver;
+            this.gbObjectsothersValues.Controls.Add(this.textBoxOwner);
+            this.gbObjectsothersValues.Controls.Add(this.label24);
+            this.gbObjectsothersValues.Controls.Add(this.textBoxFloor);
+            this.gbObjectsothersValues.Controls.Add(this.label25);
+            this.gbObjectsothersValues.Controls.Add(this.textBoxRoomNum);
+            this.gbObjectsothersValues.Controls.Add(this.label26);
+            this.gbObjectsothersValues.Controls.Add(this.textBoxArea);
+            this.gbObjectsothersValues.Controls.Add(this.label27);
+            this.gbObjectsothersValues.Location = new System.Drawing.Point(316, 13);
+            this.gbObjectsothersValues.Name = "gbObjectsothersValues";
+            this.gbObjectsothersValues.Size = new System.Drawing.Size(325, 280);
+            this.gbObjectsothersValues.TabIndex = 27;
+            this.gbObjectsothersValues.TabStop = false;
+            // 
+            // textBoxOwner
+            // 
+            this.textBoxOwner.Location = new System.Drawing.Point(165, 193);
+            this.textBoxOwner.Name = "textBoxOwner";
+            this.textBoxOwner.PlaceholderText = "Иванов";
+            this.textBoxOwner.Size = new System.Drawing.Size(129, 23);
+            this.textBoxOwner.TabIndex = 26;
+            this.textBoxOwner.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.BackColor = System.Drawing.Color.White;
+            this.label24.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label24.Location = new System.Drawing.Point(8, 196);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(79, 17);
+            this.label24.TabIndex = 27;
+            this.label24.Text = "Собственник";
+            // 
+            // textBoxFloor
+            // 
+            this.textBoxFloor.Location = new System.Drawing.Point(165, 138);
+            this.textBoxFloor.Name = "textBoxFloor";
+            this.textBoxFloor.Size = new System.Drawing.Size(129, 23);
+            this.textBoxFloor.TabIndex = 24;
+            this.textBoxFloor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.White;
+            this.label25.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.Location = new System.Drawing.Point(8, 141);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(37, 17);
+            this.label25.TabIndex = 25;
+            this.label25.Text = "Этаж";
+            // 
+            // textBoxRoomNum
+            // 
+            this.textBoxRoomNum.Location = new System.Drawing.Point(165, 82);
+            this.textBoxRoomNum.Name = "textBoxRoomNum";
+            this.textBoxRoomNum.Size = new System.Drawing.Size(129, 23);
+            this.textBoxRoomNum.TabIndex = 22;
+            this.textBoxRoomNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.White;
+            this.label26.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label26.Location = new System.Drawing.Point(8, 85);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(117, 17);
+            this.label26.TabIndex = 23;
+            this.label26.Text = "Количество комнат";
+            // 
+            // textBoxArea
+            // 
+            this.textBoxArea.Location = new System.Drawing.Point(165, 28);
+            this.textBoxArea.Name = "textBoxArea";
+            this.textBoxArea.Size = new System.Drawing.Size(129, 23);
+            this.textBoxArea.TabIndex = 16;
+            this.textBoxArea.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.White;
+            this.label27.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label27.Location = new System.Drawing.Point(8, 31);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(60, 17);
+            this.label27.TabIndex = 21;
+            this.label27.Text = "Площадь";
+            // 
+            // gbObjectsValue
+            // 
+            this.gbObjectsValue.BackColor = System.Drawing.Color.Silver;
+            this.gbObjectsValue.Controls.Add(this.textBoxApartamentNum);
+            this.gbObjectsValue.Controls.Add(this.label22);
+            this.gbObjectsValue.Controls.Add(this.textBoxHouseNum);
+            this.gbObjectsValue.Controls.Add(this.label21);
+            this.gbObjectsValue.Controls.Add(this.textBoxStreet);
+            this.gbObjectsValue.Controls.Add(this.label20);
+            this.gbObjectsValue.Controls.Add(this.textBoxCity);
+            this.gbObjectsValue.Controls.Add(this.label23);
+            this.gbObjectsValue.Location = new System.Drawing.Point(8, 13);
+            this.gbObjectsValue.Name = "gbObjectsValue";
+            this.gbObjectsValue.Size = new System.Drawing.Size(302, 280);
+            this.gbObjectsValue.TabIndex = 26;
+            this.gbObjectsValue.TabStop = false;
+            // 
+            // textBoxApartamentNum
+            // 
+            this.textBoxApartamentNum.Location = new System.Drawing.Point(111, 193);
+            this.textBoxApartamentNum.Name = "textBoxApartamentNum";
+            this.textBoxApartamentNum.Size = new System.Drawing.Size(183, 23);
+            this.textBoxApartamentNum.TabIndex = 26;
+            this.textBoxApartamentNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.White;
+            this.label22.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label22.Location = new System.Drawing.Point(8, 196);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(66, 17);
+            this.label22.TabIndex = 27;
+            this.label22.Text = "*Квартира";
+            // 
+            // textBoxHouseNum
+            // 
+            this.textBoxHouseNum.Location = new System.Drawing.Point(111, 138);
+            this.textBoxHouseNum.Name = "textBoxHouseNum";
+            this.textBoxHouseNum.Size = new System.Drawing.Size(183, 23);
+            this.textBoxHouseNum.TabIndex = 24;
+            this.textBoxHouseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.BackColor = System.Drawing.Color.White;
+            this.label21.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label21.Location = new System.Drawing.Point(8, 141);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(34, 17);
+            this.label21.TabIndex = 25;
+            this.label21.Text = "*Дом";
+            // 
+            // textBoxStreet
+            // 
+            this.textBoxStreet.Location = new System.Drawing.Point(111, 82);
+            this.textBoxStreet.Name = "textBoxStreet";
+            this.textBoxStreet.PlaceholderText = "Бульвар Победы";
+            this.textBoxStreet.Size = new System.Drawing.Size(183, 23);
+            this.textBoxStreet.TabIndex = 22;
+            this.textBoxStreet.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.White;
+            this.label20.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label20.Location = new System.Drawing.Point(8, 85);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(46, 17);
+            this.label20.TabIndex = 23;
+            this.label20.Text = "*Улица";
+            // 
+            // textBoxCity
+            // 
+            this.textBoxCity.Location = new System.Drawing.Point(111, 28);
+            this.textBoxCity.Name = "textBoxCity";
+            this.textBoxCity.PlaceholderText = "Воронеж";
+            this.textBoxCity.Size = new System.Drawing.Size(183, 23);
+            this.textBoxCity.TabIndex = 16;
+            this.textBoxCity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.BackColor = System.Drawing.Color.White;
+            this.label23.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label23.Location = new System.Drawing.Point(8, 31);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(45, 17);
+            this.label23.TabIndex = 21;
+            this.label23.Text = "*Город";
             // 
             // tabPage2
             // 
@@ -417,22 +625,6 @@
             this.tabPage2.Size = new System.Drawing.Size(649, 302);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Арендаторы";
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.BackColor = System.Drawing.Color.SkyBlue;
-            this.button1.FlatAppearance.BorderSize = 3;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Noto Serif Cond", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(7, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(204, 30);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Удалить";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // groupBox4
             // 
@@ -709,7 +901,6 @@
             this.groupBox1.Size = new System.Drawing.Size(633, 92);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // label6
             // 
@@ -791,202 +982,6 @@
             this.label4.TabIndex = 21;
             this.label4.Text = "*Фамилия";
             // 
-            // groupBox9
-            // 
-            this.groupBox9.BackColor = System.Drawing.Color.Silver;
-            this.groupBox9.Controls.Add(this.textBox18);
-            this.groupBox9.Controls.Add(this.label22);
-            this.groupBox9.Controls.Add(this.textBox17);
-            this.groupBox9.Controls.Add(this.label21);
-            this.groupBox9.Controls.Add(this.textBox15);
-            this.groupBox9.Controls.Add(this.label20);
-            this.groupBox9.Controls.Add(this.textBox16);
-            this.groupBox9.Controls.Add(this.label23);
-            this.groupBox9.Location = new System.Drawing.Point(8, 13);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(302, 280);
-            this.groupBox9.TabIndex = 26;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "groupBox9";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(111, 28);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.PlaceholderText = "Иванов";
-            this.textBox16.Size = new System.Drawing.Size(183, 23);
-            this.textBox16.TabIndex = 16;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.White;
-            this.label23.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label23.Location = new System.Drawing.Point(8, 31);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(45, 17);
-            this.label23.TabIndex = 21;
-            this.label23.Text = "*Город";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(111, 82);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.PlaceholderText = "Иванов";
-            this.textBox15.Size = new System.Drawing.Size(183, 23);
-            this.textBox15.TabIndex = 22;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.White;
-            this.label20.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label20.Location = new System.Drawing.Point(8, 85);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(46, 17);
-            this.label20.TabIndex = 23;
-            this.label20.Text = "*Улица";
-            // 
-            // textBox17
-            // 
-            this.textBox17.Location = new System.Drawing.Point(111, 138);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.PlaceholderText = "Иванов";
-            this.textBox17.Size = new System.Drawing.Size(183, 23);
-            this.textBox17.TabIndex = 24;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.White;
-            this.label21.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label21.Location = new System.Drawing.Point(8, 141);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(34, 17);
-            this.label21.TabIndex = 25;
-            this.label21.Text = "*Дом";
-            // 
-            // textBox18
-            // 
-            this.textBox18.Location = new System.Drawing.Point(111, 193);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.PlaceholderText = "Иванов";
-            this.textBox18.Size = new System.Drawing.Size(183, 23);
-            this.textBox18.TabIndex = 26;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.White;
-            this.label22.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label22.Location = new System.Drawing.Point(8, 196);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(66, 17);
-            this.label22.TabIndex = 27;
-            this.label22.Text = "*Квартира";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.BackColor = System.Drawing.Color.Silver;
-            this.groupBox10.Controls.Add(this.textBox19);
-            this.groupBox10.Controls.Add(this.label24);
-            this.groupBox10.Controls.Add(this.textBox20);
-            this.groupBox10.Controls.Add(this.label25);
-            this.groupBox10.Controls.Add(this.textBox21);
-            this.groupBox10.Controls.Add(this.label26);
-            this.groupBox10.Controls.Add(this.textBox22);
-            this.groupBox10.Controls.Add(this.label27);
-            this.groupBox10.Location = new System.Drawing.Point(316, 13);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(325, 280);
-            this.groupBox10.TabIndex = 27;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "groupBox10";
-            // 
-            // textBox19
-            // 
-            this.textBox19.Location = new System.Drawing.Point(165, 193);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.PlaceholderText = "Иванов";
-            this.textBox19.Size = new System.Drawing.Size(129, 23);
-            this.textBox19.TabIndex = 26;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.BackColor = System.Drawing.Color.White;
-            this.label24.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label24.Location = new System.Drawing.Point(8, 196);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(79, 17);
-            this.label24.TabIndex = 27;
-            this.label24.Text = "Собственник";
-            // 
-            // textBox20
-            // 
-            this.textBox20.Location = new System.Drawing.Point(165, 138);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.PlaceholderText = "Иванов";
-            this.textBox20.Size = new System.Drawing.Size(129, 23);
-            this.textBox20.TabIndex = 24;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.BackColor = System.Drawing.Color.White;
-            this.label25.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.Location = new System.Drawing.Point(8, 141);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(37, 17);
-            this.label25.TabIndex = 25;
-            this.label25.Text = "Этаж";
-            // 
-            // textBox21
-            // 
-            this.textBox21.Location = new System.Drawing.Point(165, 82);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.PlaceholderText = "Иванов";
-            this.textBox21.Size = new System.Drawing.Size(129, 23);
-            this.textBox21.TabIndex = 22;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.White;
-            this.label26.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label26.Location = new System.Drawing.Point(8, 85);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(117, 17);
-            this.label26.TabIndex = 23;
-            this.label26.Text = "Количество комнат";
-            // 
-            // textBox22
-            // 
-            this.textBox22.Location = new System.Drawing.Point(165, 28);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.PlaceholderText = "Иванов";
-            this.textBox22.Size = new System.Drawing.Size(129, 23);
-            this.textBox22.TabIndex = 16;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.White;
-            this.label27.Font = new System.Drawing.Font("Noto Serif Cond", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label27.Location = new System.Drawing.Point(8, 31);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(60, 17);
-            this.label27.TabIndex = 21;
-            this.label27.Text = "Площадь";
-            // 
             // GlobalForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -995,21 +990,26 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(934, 611);
-            this.Controls.Add(this.groupBox8);
+            this.Controls.Add(this.gbLog_In);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.listViewElemDB);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl);
             this.Name = "GlobalForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.GlobalForm_Load);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox7.ResumeLayout(false);
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.tabControl1.ResumeLayout(false);
+            this.gbLog_In.ResumeLayout(false);
+            this.gbLog_In.PerformLayout();
+            this.tabControl.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.gbObjectsothersValues.ResumeLayout(false);
+            this.gbObjectsothersValues.PerformLayout();
+            this.gbObjectsValue.ResumeLayout(false);
+            this.gbObjectsValue.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -1021,17 +1021,13 @@
             this.groupBox6.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button addUnit;
+        private System.Windows.Forms.Button addObject;
         private System.Windows.Forms.Button remoteUnit;
         private System.Windows.Forms.Button exitApp;
      
@@ -1042,10 +1038,10 @@
         public System.Windows.Forms.ColumnHeader column_FIO;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBoxObjects;
         private System.Windows.Forms.ColumnHeader column_telnumb2;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox gbLog_In;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
@@ -1055,27 +1051,27 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBoxRole;
         private System.Windows.Forms.TextBox textBoxLogin;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.Button addTenant;
+        private System.Windows.Forms.GroupBox gbObjectsothersValues;
+        private System.Windows.Forms.TextBox textBoxOwner;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.TextBox textBoxFloor;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBoxRoomNum;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.TextBox textBoxArea;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.TextBox textBox18;
+        
+        private System.Windows.Forms.TextBox textBoxApartamentNum;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBoxHouse;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBoxStreet;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBoxCity;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label11;
@@ -1109,6 +1105,8 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox textBoxHouseNum;
+        private System.Windows.Forms.GroupBox gbObjectsValue;
     }
 }
 

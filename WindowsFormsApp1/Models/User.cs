@@ -15,10 +15,9 @@ namespace WindowsFormsApp1.Models
             Tenants = new List<Tenant>();
         }
         public ICollection<ArendaObject> ArendaObjects { get; set; }
-        public User(List<ArendaObject> a)
+        public User(List<ArendaObject> user)
         {
-            this.ArendaObjects = new List<ArendaObject>();
-
+            ArendaObjects = new List<ArendaObject>();
         }
     }
 }
