@@ -1,26 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
+    "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {}
   },
   "projects": {
-    "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
+    "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "projectUniqueName": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
         "projectName": "WindowsFormsApp1",
-        "projectPath": "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\ZaRt\\.nuget\\packages\\",
-        "outputPath": "D:\\All_My_Applications\\VisualStudio2019\\C#\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\obj\\",
+        "projectPath": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\WindowsFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\a1ex\\.nuget\\packages\\",
+        "outputPath": "F:\\KoDiNG\\My_Projects\\VS_2019\\dotNetCore\\WinForms\\MyWinFormApp\\WindowsFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ZaRt\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\a1ex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
