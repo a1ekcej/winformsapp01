@@ -76,35 +76,35 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.tbPhone2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbPhone1 = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tbPleadge = new System.Windows.Forms.TextBox();
+            this.tbRent = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.tbLeaseDate = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.tbaddress = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.tbCity = new System.Windows.Forms.TextBox();
+            this.tbpaspNum = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.tbpaspSeries = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbfirstName = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbthirdName = new System.Windows.Forms.TextBox();
+            this.tblastName = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox5.SuspendLayout();
             this.groupBox7.SuspendLayout();
@@ -255,15 +255,11 @@
             // comboBoxObjects
             // 
             this.comboBoxObjects.FormattingEnabled = true;
-            this.comboBoxObjects.Items.AddRange(new object[] {
-            "г. Воронеж, Владимира Невского 19",
-            "г. Воронеж, 60 Армии 29А",
-            "г. Воронеж, Курчатова 36А",
-            "г. Воронеж, Олимпийский 11"});
             this.comboBoxObjects.Location = new System.Drawing.Point(150, 11);
             this.comboBoxObjects.Name = "comboBoxObjects";
             this.comboBoxObjects.Size = new System.Drawing.Size(502, 24);
             this.comboBoxObjects.TabIndex = 0;
+            this.comboBoxObjects.SelectionChangeCommitted += new System.EventHandler(this.comboBoxObjects_SelectionChangeCommitted);
             // 
             // groupBox7
             // 
@@ -630,10 +626,10 @@
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Transparent;
             this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.textBox13);
+            this.groupBox4.Controls.Add(this.tbPhone2);
             this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.textBox2);
-            this.groupBox4.Controls.Add(this.textBox3);
+            this.groupBox4.Controls.Add(this.tbPhone1);
+            this.groupBox4.Controls.Add(this.tbEmail);
             this.groupBox4.Controls.Add(this.label3);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
@@ -657,14 +653,14 @@
             this.label11.TabIndex = 5;
             this.label11.Text = "Контактный телефон №2";
             // 
-            // textBox13
+            // tbPhone2
             // 
-            this.textBox13.Location = new System.Drawing.Point(6, 96);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.PlaceholderText = "8(900) -111-11-11";
-            this.textBox13.Size = new System.Drawing.Size(152, 23);
-            this.textBox13.TabIndex = 4;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPhone2.Location = new System.Drawing.Point(6, 96);
+            this.tbPhone2.Name = "tbPhone2";
+            this.tbPhone2.PlaceholderText = "8(900) -111-11-11";
+            this.tbPhone2.Size = new System.Drawing.Size(152, 23);
+            this.tbPhone2.TabIndex = 4;
+            this.tbPhone2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -678,23 +674,23 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "*Контактный телефон №1";
             // 
-            // textBox2
+            // tbPhone1
             // 
-            this.textBox2.Location = new System.Drawing.Point(6, 37);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PlaceholderText = "8(900) -111-11-11";
-            this.textBox2.Size = new System.Drawing.Size(152, 23);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPhone1.Location = new System.Drawing.Point(6, 37);
+            this.tbPhone1.Name = "tbPhone1";
+            this.tbPhone1.PlaceholderText = "8(900) -111-11-11";
+            this.tbPhone1.Size = new System.Drawing.Size(152, 23);
+            this.tbPhone1.TabIndex = 4;
+            this.tbPhone1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox3
+            // tbEmail
             // 
-            this.textBox3.Location = new System.Drawing.Point(6, 156);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PlaceholderText = "as*****g@mail.ru";
-            this.textBox3.Size = new System.Drawing.Size(147, 23);
-            this.textBox3.TabIndex = 4;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbEmail.Location = new System.Drawing.Point(6, 156);
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.PlaceholderText = "as*****g@mail.ru";
+            this.tbEmail.Size = new System.Drawing.Size(147, 23);
+            this.tbEmail.TabIndex = 4;
+            this.tbEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -711,11 +707,11 @@
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Controls.Add(this.textBox12);
-            this.groupBox3.Controls.Add(this.textBox9);
+            this.groupBox3.Controls.Add(this.tbPleadge);
+            this.groupBox3.Controls.Add(this.tbRent);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.textBox11);
+            this.groupBox3.Controls.Add(this.tbLeaseDate);
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.groupBox3.ForeColor = System.Drawing.SystemColors.Desktop;
@@ -737,23 +733,23 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "*Залог";
             // 
-            // textBox12
+            // tbPleadge
             // 
-            this.textBox12.Location = new System.Drawing.Point(6, 156);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.PlaceholderText = "10000";
-            this.textBox12.Size = new System.Drawing.Size(168, 23);
-            this.textBox12.TabIndex = 4;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbPleadge.Location = new System.Drawing.Point(6, 156);
+            this.tbPleadge.Name = "tbPleadge";
+            this.tbPleadge.PlaceholderText = "10000";
+            this.tbPleadge.Size = new System.Drawing.Size(168, 23);
+            this.tbPleadge.TabIndex = 4;
+            this.tbPleadge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox9
+            // tbRent
             // 
-            this.textBox9.Location = new System.Drawing.Point(6, 96);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.PlaceholderText = "10000";
-            this.textBox9.Size = new System.Drawing.Size(168, 23);
-            this.textBox9.TabIndex = 4;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbRent.Location = new System.Drawing.Point(6, 96);
+            this.tbRent.Name = "tbRent";
+            this.tbRent.PlaceholderText = "10000";
+            this.tbRent.Size = new System.Drawing.Size(168, 23);
+            this.tbRent.TabIndex = 4;
+            this.tbRent.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label9
             // 
@@ -777,22 +773,22 @@
             this.label10.TabIndex = 5;
             this.label10.Text = "*Дата заселения";
             // 
-            // textBox11
+            // tbLeaseDate
             // 
-            this.textBox11.Location = new System.Drawing.Point(6, 37);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.PlaceholderText = "09.09.2020";
-            this.textBox11.Size = new System.Drawing.Size(98, 23);
-            this.textBox11.TabIndex = 4;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbLeaseDate.Location = new System.Drawing.Point(6, 37);
+            this.tbLeaseDate.Name = "tbLeaseDate";
+            this.tbLeaseDate.PlaceholderText = "09.09.2020";
+            this.tbLeaseDate.Size = new System.Drawing.Size(98, 23);
+            this.tbLeaseDate.TabIndex = 4;
+            this.tbLeaseDate.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.groupBox6);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.tbpaspNum);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.tbpaspSeries);
             this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox2.Font = new System.Drawing.Font("Bookman Old Style", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.groupBox2.ForeColor = System.Drawing.SystemColors.Desktop;
@@ -807,9 +803,9 @@
             // 
             this.groupBox6.BackColor = System.Drawing.Color.Transparent;
             this.groupBox6.Controls.Add(this.label13);
-            this.groupBox6.Controls.Add(this.textBox10);
+            this.groupBox6.Controls.Add(this.tbaddress);
             this.groupBox6.Controls.Add(this.label8);
-            this.groupBox6.Controls.Add(this.textBox8);
+            this.groupBox6.Controls.Add(this.tbCity);
             this.groupBox6.Location = new System.Drawing.Point(6, 66);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(187, 122);
@@ -828,14 +824,14 @@
             this.label13.TabIndex = 5;
             this.label13.Text = "*Адресс (улица/дом/квартира)";
             // 
-            // textBox10
+            // tbaddress
             // 
-            this.textBox10.Location = new System.Drawing.Point(6, 93);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.PlaceholderText = "ул. Ивановская, 36";
-            this.textBox10.Size = new System.Drawing.Size(159, 23);
-            this.textBox10.TabIndex = 4;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbaddress.Location = new System.Drawing.Point(6, 93);
+            this.tbaddress.Name = "tbaddress";
+            this.tbaddress.PlaceholderText = "ул. Ивановская, 36";
+            this.tbaddress.Size = new System.Drawing.Size(159, 23);
+            this.tbaddress.TabIndex = 4;
+            this.tbaddress.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label8
             // 
@@ -848,23 +844,23 @@
             this.label8.TabIndex = 5;
             this.label8.Text = "*Населенный пункт";
             // 
-            // textBox8
+            // tbCity
             // 
-            this.textBox8.Location = new System.Drawing.Point(6, 37);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.PlaceholderText = "г. Иваново";
-            this.textBox8.Size = new System.Drawing.Size(159, 23);
-            this.textBox8.TabIndex = 4;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCity.Location = new System.Drawing.Point(6, 37);
+            this.tbCity.Name = "tbCity";
+            this.tbCity.PlaceholderText = "г. Иваново";
+            this.tbCity.Size = new System.Drawing.Size(159, 23);
+            this.tbCity.TabIndex = 4;
+            this.tbCity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox7
+            // tbpaspNum
             // 
-            this.textBox7.Location = new System.Drawing.Point(59, 37);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.PlaceholderText = "999999";
-            this.textBox7.Size = new System.Drawing.Size(91, 23);
-            this.textBox7.TabIndex = 4;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbpaspNum.Location = new System.Drawing.Point(59, 37);
+            this.tbpaspNum.Name = "tbpaspNum";
+            this.tbpaspNum.PlaceholderText = "999999";
+            this.tbpaspNum.Size = new System.Drawing.Size(91, 23);
+            this.tbpaspNum.TabIndex = 4;
+            this.tbpaspNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label7
             // 
@@ -877,24 +873,24 @@
             this.label7.TabIndex = 5;
             this.label7.Text = "*Серия и номер паспорта";
             // 
-            // textBox6
+            // tbpaspSeries
             // 
-            this.textBox6.Location = new System.Drawing.Point(6, 37);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.PlaceholderText = "9999";
-            this.textBox6.Size = new System.Drawing.Size(47, 23);
-            this.textBox6.TabIndex = 4;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbpaspSeries.Location = new System.Drawing.Point(6, 37);
+            this.tbpaspSeries.Name = "tbpaspSeries";
+            this.tbpaspSeries.PlaceholderText = "9999";
+            this.tbpaspSeries.Size = new System.Drawing.Size(47, 23);
+            this.tbpaspSeries.TabIndex = 4;
+            this.tbpaspSeries.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.textBox14);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.tbfirstName);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.tbthirdName);
+            this.groupBox1.Controls.Add(this.tblastName);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Location = new System.Drawing.Point(7, 2);
             this.groupBox1.Name = "groupBox1";
@@ -922,14 +918,14 @@
             this.textBox14.TabIndex = 19;
             this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // tbfirstName
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PlaceholderText = "Иванов";
-            this.textBox1.Size = new System.Drawing.Size(183, 23);
-            this.textBox1.TabIndex = 16;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbfirstName.Location = new System.Drawing.Point(6, 34);
+            this.tbfirstName.Name = "tbfirstName";
+            this.tbfirstName.PlaceholderText = "Иванов";
+            this.tbfirstName.Size = new System.Drawing.Size(183, 23);
+            this.tbfirstName.TabIndex = 16;
+            this.tbfirstName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label15
             // 
@@ -953,23 +949,23 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "*Имя";
             // 
-            // textBox5
+            // tbthirdName
             // 
-            this.textBox5.Location = new System.Drawing.Point(454, 35);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.PlaceholderText = "Петрович";
-            this.textBox5.Size = new System.Drawing.Size(171, 23);
-            this.textBox5.TabIndex = 17;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbthirdName.Location = new System.Drawing.Point(454, 35);
+            this.tbthirdName.Name = "tbthirdName";
+            this.tbthirdName.PlaceholderText = "Петрович";
+            this.tbthirdName.Size = new System.Drawing.Size(171, 23);
+            this.tbthirdName.TabIndex = 17;
+            this.tbthirdName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox4
+            // tblastName
             // 
-            this.textBox4.Location = new System.Drawing.Point(230, 34);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.PlaceholderText = "Иван";
-            this.textBox4.Size = new System.Drawing.Size(183, 23);
-            this.textBox4.TabIndex = 18;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tblastName.Location = new System.Drawing.Point(230, 34);
+            this.tblastName.Name = "tblastName";
+            this.tblastName.PlaceholderText = "Иван";
+            this.tblastName.Size = new System.Drawing.Size(183, 23);
+            this.tblastName.TabIndex = 18;
+            this.tblastName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
@@ -1075,35 +1071,35 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox tbPhone2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbPhone1;
+        private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tbPleadge;
+        private System.Windows.Forms.TextBox tbRent;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox tbLeaseDate;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox tbaddress;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox tbCity;
+        private System.Windows.Forms.TextBox tbpaspNum;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox tbpaspSeries;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbfirstName;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbthirdName;
+        private System.Windows.Forms.TextBox tblastName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxHouseNum;
         private System.Windows.Forms.GroupBox gbObjectsValue;
