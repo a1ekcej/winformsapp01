@@ -18,6 +18,7 @@ namespace WindowsFormsApp1.Models
         public string Owner { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
+       
 
     }
 }

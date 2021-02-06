@@ -80,11 +80,10 @@
             this.paswdfield.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.paswdfield.Font = new System.Drawing.Font("Source Serif Pro", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.paswdfield.Location = new System.Drawing.Point(167, 205);
-            this.paswdfield.Multiline = true;
             this.paswdfield.Name = "paswdfield";
             this.paswdfield.PasswordChar = '*';
             this.paswdfield.PlaceholderText = "paswd";
-            this.paswdfield.Size = new System.Drawing.Size(215, 64);
+            this.paswdfield.Size = new System.Drawing.Size(215, 90);
             this.paswdfield.TabIndex = 2;
             this.paswdfield.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -92,10 +91,9 @@
             // 
             this.loginfield.Font = new System.Drawing.Font("Source Serif Pro", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.loginfield.Location = new System.Drawing.Point(167, 106);
-            this.loginfield.Multiline = true;
             this.loginfield.Name = "loginfield";
             this.loginfield.PlaceholderText = "user";
-            this.loginfield.Size = new System.Drawing.Size(215, 64);
+            this.loginfield.Size = new System.Drawing.Size(215, 90);
             this.loginfield.TabIndex = 1;
             this.loginfield.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

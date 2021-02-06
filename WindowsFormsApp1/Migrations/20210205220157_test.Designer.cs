@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WindowsFormsApp1.Models;
 
 namespace WindowsFormsApp1.Migrations
 {
     [DbContext(typeof(DataContext))]
-    partial class DataUsersContextModelSnapshot : ModelSnapshot
+    [Migration("20210205220157_test")]
+    partial class test
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -69,7 +71,7 @@ namespace WindowsFormsApp1.Migrations
 
             modelBuilder.Entity("WindowsFormsApp1.Models.Tenant", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("TenantId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -77,9 +79,6 @@ namespace WindowsFormsApp1.Migrations
                     b.Property<string>("Address")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("ArendaObjectId")
-                        .HasColumnType("int");
 
                     b.Property<string>("City")
                         .IsRequired()
@@ -102,6 +101,10 @@ namespace WindowsFormsApp1.Migrations
 
                     b.Property<int>("Number_passport")
                         .HasColumnType("int");
+
+                    b.Property<string>("ObjectArenda")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Phone_1")
                         .IsRequired()
@@ -127,9 +130,7 @@ namespace WindowsFormsApp1.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("ArendaObjectId");
+                    b.HasKey("TenantId");
 
                     b.HasIndex("UserId");
 
@@ -171,12 +172,6 @@ namespace WindowsFormsApp1.Migrations
 
             modelBuilder.Entity("WindowsFormsApp1.Models.Tenant", b =>
                 {
-                    b.HasOne("WindowsFormsApp1.Models.ArendaObject", "ArendaObject")
-                        .WithMany()
-                        .HasForeignKey("ArendaObjectId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("WindowsFormsApp1.Models.User", "User")
                         .WithMany("Tenants")
                         .HasForeignKey("UserId")

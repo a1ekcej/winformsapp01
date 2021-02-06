@@ -3,11 +3,9 @@ using System.Collections.Generic;
 
 namespace WindowsFormsApp1.Models
 {
-    
-
     public class Tenant
     {
-        public int Id { get; set; }
+        public int TenantId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string ThirdName { get; set; }
@@ -23,7 +21,6 @@ namespace WindowsFormsApp1.Models
         public string Address { get; set; }
         public int UserId { get; set; }
         public User User { get; set; }
-        public int  ArendaObjectId { get; set; }
-        public ArendaObject ArendaObject { get; set; }
+        public string ObjectArenda { get; set; }
     }
 }

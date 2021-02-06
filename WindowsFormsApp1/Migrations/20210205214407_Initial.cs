@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace WindowsFormsApp1.Migrations
 {
-    public partial class test : Migration
+    public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -54,7 +54,7 @@ namespace WindowsFormsApp1.Migrations
                 name: "Tenants",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false)
+                    TenantId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FirstName = table.Column<string>(nullable: false),
                     LastName = table.Column<string>(nullable: false),
@@ -69,18 +69,11 @@ namespace WindowsFormsApp1.Migrations
                     Number_passport = table.Column<int>(nullable: false),
                     City = table.Column<string>(nullable: false),
                     Address = table.Column<string>(nullable: false),
-                    UserId = table.Column<int>(nullable: false),
-                    ArendaObjectId = table.Column<int>(nullable: false)
+                    UserId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tenants", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Tenants_ArendaObjects_ArendaObjectId",
-                        column: x => x.ArendaObjectId,
-                        principalTable: "ArendaObjects",
-                        principalColumn: "ArendaObjectId",
-                        onDelete: ReferentialAction.Cascade);
+                    table.PrimaryKey("PK_Tenants", x => x.TenantId);
                     table.ForeignKey(
                         name: "FK_Tenants_Users_UserId",
                         column: x => x.UserId,
@@ -95,11 +88,6 @@ namespace WindowsFormsApp1.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Tenants_ArendaObjectId",
-                table: "Tenants",
-                column: "ArendaObjectId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Tenants_UserId",
                 table: "Tenants",
                 column: "UserId");
@@ -108,10 +96,10 @@ namespace WindowsFormsApp1.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Tenants");
+                name: "ArendaObjects");
 
             migrationBuilder.DropTable(
-                name: "ArendaObjects");
+                name: "Tenants");
 
             migrationBuilder.DropTable(
                 name: "Users");
