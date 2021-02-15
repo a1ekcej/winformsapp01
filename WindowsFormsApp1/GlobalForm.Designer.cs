@@ -192,7 +192,7 @@ namespace WindowsFormsApp1
             this.listViewElemDB.FullRowSelect = true;
             this.listViewElemDB.GridLines = true;
             this.listViewElemDB.HideSelection = false;
-            this.listViewElemDB.Location = new System.Drawing.Point(17, 647);
+            this.listViewElemDB.Location = new System.Drawing.Point(13, 658);
             this.listViewElemDB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.listViewElemDB.Name = "listViewElemDB";
             this.listViewElemDB.Size = new System.Drawing.Size(1297, 364);

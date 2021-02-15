@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using WindowsFormsApp1.Models;
@@ -20,7 +21,24 @@ namespace WindowsFormsApp1
 
         private void GlobalForm_Load(object sender, EventArgs e)
         {
-            this.Refresh();
+            //this.Refresh();
+            comboBoxObjects.SelectedIndexChanged += comboBoxObjects_SelectionChangeCommitted;
+            using (DataContext db = new DataContext())
+            {
+                foreach (var t in db.Tenants)
+                {
+                    if (string.IsNullOrEmpty(t.FirstName)) return;
+                    ListViewItem item = new ListViewItem("Сдано");
+                    item.SubItems.Add(t.FirstName + " " + t.LastName + " " + t.ThirdName);
+                    item.SubItems.Add(t.ObjectArenda);
+                    item.SubItems.Add(t.Rent_price.ToString());
+                    item.SubItems.Add(t.Phone_1);
+                    item.SubItems.Add(t.Phone_2);
+                    listViewElemDB.Items.Add(item);
+                }
+            }
+                
+            
         }
 
         public GlobalForm()
@@ -54,10 +72,12 @@ namespace WindowsFormsApp1
             {
                 db.ArendaObjects.Add(obj);
                 db.SaveChanges();
+                MessageBox.Show("новый объект сохранен в базу данных");
                 ClearTabControl(this);
                 GlobalForm_Load(this, e);
             }
         }
+
         public static void ClearTabControl(Control control)
         {
             foreach (Control c in control.Controls)
@@ -99,6 +119,7 @@ namespace WindowsFormsApp1
             {
                 db.Add(tenant);
                 db.SaveChanges();
+                MessageBox.Show("новый жилец сохранен в базу данных");
 
                 ClearTabControl(this);
                 GlobalForm_Load(this, e);
@@ -109,7 +130,7 @@ namespace WindowsFormsApp1
         private void comboBoxObjects_SelectionChangeCommitted(object sender, EventArgs e)
         {
             tbObjectArenda.Text = comboBoxObjects.Text;
-            GlobalForm_Load(this, e);
+            //GlobalForm_Load(this, e);
         }
     }
 }

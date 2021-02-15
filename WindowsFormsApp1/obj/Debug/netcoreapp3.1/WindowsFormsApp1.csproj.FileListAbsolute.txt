@@ -206,3 +206,4 @@ F:\KoDiNG\My_Projects\VS_2019\dotNetCore\WinForms\MyWinFormApp\windowsformsapp1\
 F:\KoDiNG\My_Projects\VS_2019\dotNetCore\WinForms\MyWinFormApp\windowsformsapp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.dll
 F:\KoDiNG\My_Projects\VS_2019\dotNetCore\WinForms\MyWinFormApp\windowsformsapp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.pdb
 F:\KoDiNG\My_Projects\VS_2019\dotNetCore\WinForms\MyWinFormApp\windowsformsapp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.genruntimeconfig.cache
+F:\KoDiNG\My_Projects\VS_2019\dotNetCore\WinForms\MyWinFormApp\WindowsFormsApp1\obj\Debug\netcoreapp3.1\WindowsFormsApp1.csprojAssemblyReference.cache
