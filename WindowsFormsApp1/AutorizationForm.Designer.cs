@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AutorizationForm));
             this.signInbtn = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelWarningLogPaswd = new System.Windows.Forms.Label();
             this.paswdfield = new System.Windows.Forms.TextBox();
             this.loginfield = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -63,6 +64,7 @@
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.groupBox1.Controls.Add(this.labelWarningLogPaswd);
             this.groupBox1.Controls.Add(this.paswdfield);
             this.groupBox1.Controls.Add(this.loginfield);
             this.groupBox1.Controls.Add(this.pictureBox2);
@@ -75,27 +77,46 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+            // labelWarningLogPaswd
+            // 
+            this.labelWarningLogPaswd.AutoSize = true;
+            this.labelWarningLogPaswd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelWarningLogPaswd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelWarningLogPaswd.Font = new System.Drawing.Font("Source Serif Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.labelWarningLogPaswd.ForeColor = System.Drawing.Color.Firebrick;
+            this.labelWarningLogPaswd.Location = new System.Drawing.Point(167, 270);
+            this.labelWarningLogPaswd.Name = "labelWarningLogPaswd";
+            this.labelWarningLogPaswd.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.labelWarningLogPaswd.Size = new System.Drawing.Size(289, 68);
+            this.labelWarningLogPaswd.TabIndex = 0;
+            this.labelWarningLogPaswd.Text = "Логин или пароль введен не верно! \r\nПопробуйте еще раз.\r\n\r\n";
+            this.labelWarningLogPaswd.Visible = false;
+            // 
             // paswdfield
             // 
+            this.paswdfield.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.paswdfield.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.paswdfield.Font = new System.Drawing.Font("Source Serif Pro", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.paswdfield.Location = new System.Drawing.Point(167, 205);
             this.paswdfield.Name = "paswdfield";
             this.paswdfield.PasswordChar = '*';
-            this.paswdfield.PlaceholderText = "paswd";
-            this.paswdfield.Size = new System.Drawing.Size(215, 90);
+            this.paswdfield.PlaceholderText = "password";
+            this.paswdfield.Size = new System.Drawing.Size(215, 62);
             this.paswdfield.TabIndex = 2;
             this.paswdfield.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.paswdfield.WordWrap = false;
             // 
             // loginfield
             // 
             this.loginfield.Font = new System.Drawing.Font("Source Serif Pro", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.loginfield.Location = new System.Drawing.Point(167, 106);
             this.loginfield.Name = "loginfield";
-            this.loginfield.PlaceholderText = "user";
-            this.loginfield.Size = new System.Drawing.Size(215, 90);
+            this.loginfield.PlaceholderText = "login";
+            this.loginfield.Size = new System.Drawing.Size(215, 62);
             this.loginfield.TabIndex = 1;
             this.loginfield.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.loginfield.WordWrap = false;
             // 
             // pictureBox2
             // 
@@ -139,6 +160,7 @@
             // 
             // AutorizationForm
             // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(559, 526);
@@ -163,5 +185,6 @@
         private System.Windows.Forms.TextBox loginfield;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label labelWarningLogPaswd;
     }
 }

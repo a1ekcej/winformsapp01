@@ -30,8 +30,7 @@ namespace WindowsFormsApp1
             var account = loginUser(loginfield.Text, paswdfield.Text);
             if (account == null)
             {
-                MessageBox.Show("Failed");
-
+                labelWarningLogPaswd.Visible = true;
             }
             else
             {
