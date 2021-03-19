@@ -9,7 +9,8 @@ namespace WindowsFormsApp1
 {
     public partial class AutorizationForm : Form
     {
-        private DataUsersContext db = new DataUsersContext(); 
+        private DataContext db = new DataContext();
+        int us;
         
         public AutorizationForm()
         {
@@ -29,15 +30,15 @@ namespace WindowsFormsApp1
             var account = loginUser(loginfield.Text, paswdfield.Text);
             if (account == null)
             {
-                MessageBox.Show("Failed");
+                labelWarningLogPaswd.Visible = true;
             }
             else
             {
                 this.Hide();
-                GlobalForm global = new GlobalForm();
-                global.Show();
-
-                global.LoginTXT(account.UserName, account.UserRight);
+                GlobalForm globalform = new GlobalForm();
+                globalform.Show();
+                us = account.UserId;
+                globalform.LoginTXT(account.UserName, account.UserRight, account.UserId);
             }
         }
 

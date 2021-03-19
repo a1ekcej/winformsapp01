@@ -8,7 +8,7 @@ using WindowsFormsApp1.Models;
 
 namespace WindowsFormsApp1.Migrations
 {
-    [DbContext(typeof(DataUsersContext))]
+    [DbContext(typeof(DataContext))]
     [Migration("20210109221510_user1")]
     partial class user1
     {

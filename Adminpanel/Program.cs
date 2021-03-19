@@ -48,7 +48,7 @@ namespace Adminpanel
                                 break;
                         }
 
-                        using (DataUsersContext db = new DataUsersContext())
+                        using (DataContext db = new DataContext())
                         {
                             User user = new User()
                             {
@@ -70,7 +70,7 @@ namespace Adminpanel
 
                         if (MessageBox.Show($"Вы действительно хотите удалить пользователя {loginDELETE}", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
-                            using (DataUsersContext db = new DataUsersContext())
+                            using (DataContext db = new DataContext())
                             {
                                 var user = db.Users.FirstOrDefault(u => u.UserName == loginDELETE);
                                 db.Users.Remove(user);
